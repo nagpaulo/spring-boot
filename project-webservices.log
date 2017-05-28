@@ -1,0 +1,237 @@
+2017-05-27 23:27:48.263  INFO 3508 --- [main] b.c.p.w.Boot                             : Starting Boot on Paulo with PID 3508 (started by Paulo Roberto in C:\Users\Paulo Roberto\workspace\spring-boot)
+2017-05-27 23:27:48.277  INFO 3508 --- [main] b.c.p.w.Boot                             : No active profile set, falling back to default profiles: default
+2017-05-27 23:27:48.517  INFO 3508 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4c178a76: startup date [Sat May 27 23:27:48 BRT 2017]; root of context hierarchy
+2017-05-27 23:27:49.843  INFO 3508 --- [background-preinit] o.h.v.u.Version                          : Hibernate Validator 4.1.0.Final
+2017-05-27 23:27:49.892  INFO 3508 --- [background-preinit] o.h.v.e.r.DefaultTraversableResolver     : Instantiated an instance of org.hibernate.validator.engine.resolver.JPATraversableResolver.
+2017-05-27 23:27:52.722  INFO 3508 --- [main] o.h.v.e.r.DefaultTraversableResolver     : Instantiated an instance of org.hibernate.validator.engine.resolver.JPATraversableResolver.
+2017-05-27 23:27:52.723  INFO 3508 --- [main] o.h.v.e.r.DefaultTraversableResolver     : Instantiated an instance of org.hibernate.validator.engine.resolver.JPATraversableResolver.
+2017-05-27 23:27:53.521  INFO 3508 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-05-27 23:27:53.590  INFO 3508 --- [main] o.a.c.c.StandardService                  : Starting service Tomcat
+2017-05-27 23:27:53.590  INFO 3508 --- [main] o.a.c.c.StandardEngine                   : Starting Servlet Engine: Apache Tomcat/8.5.14
+2017-05-27 23:27:55.522  INFO 3508 --- [localhost-startStop-1] o.a.j.s.TldScanner                       : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2017-05-27 23:27:55.550  INFO 3508 --- [localhost-startStop-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2017-05-27 23:27:55.551  INFO 3508 --- [localhost-startStop-1] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 7036 ms
+2017-05-27 23:27:56.141  INFO 3508 --- [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2017-05-27 23:27:56.151  INFO 3508 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-05-27 23:27:56.153  INFO 3508 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-05-27 23:27:56.153  INFO 3508 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-05-27 23:27:56.156  INFO 3508 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'requestContextFilter' to: [/*]
+2017-05-27 23:27:59.765  INFO 3508 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-05-27 23:27:59.885  INFO 3508 --- [main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-05-27 23:28:00.188  INFO 3508 --- [main] o.h.Version                              : HHH000412: Hibernate Core {5.0.12.Final}
+2017-05-27 23:28:00.195  INFO 3508 --- [main] o.h.c.Environment                        : HHH000206: hibernate.properties not found
+2017-05-27 23:28:00.201  INFO 3508 --- [main] o.h.c.Environment                        : HHH000021: Bytecode provider name : javassist
+2017-05-27 23:28:00.452  INFO 3508 --- [main] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-05-27 23:28:00.903  INFO 3508 --- [main] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2017-05-27 23:28:01.965  INFO 3508 --- [main] o.h.e.j.e.i.LobCreatorBuilderImpl        : HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2017-05-27 23:28:01.976  INFO 3508 --- [main] o.h.t.BasicTypeRegistry                  : HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@4cdb8504
+2017-05-27 23:28:02.466  INFO 3508 --- [main] o.h.v.e.r.DefaultTraversableResolver     : Instantiated an instance of org.hibernate.validator.engine.resolver.JPATraversableResolver.
+2017-05-27 23:28:02.550  INFO 3508 --- [main] o.h.t.h.SchemaUpdate                     : HHH000228: Running hbm2ddl schema update
+2017-05-27 23:28:02.742  INFO 3508 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-05-27 23:28:03.710  INFO 3508 --- [main] o.h.v.e.r.DefaultTraversableResolver     : Instantiated an instance of org.hibernate.validator.engine.resolver.JPATraversableResolver.
+2017-05-27 23:28:03.835  INFO 3508 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4c178a76: startup date [Sat May 27 23:27:48 BRT 2017]; root of context hierarchy
+2017-05-27 23:28:04.186  INFO 3508 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String br.com.project.webservice.controllers.HomeController.index()
+2017-05-27 23:28:04.196  INFO 3508 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-05-27 23:28:04.198  INFO 3508 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-05-27 23:28:04.340  INFO 3508 --- [main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-05-27 23:28:04.340  INFO 3508 --- [main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-05-27 23:28:04.484  INFO 3508 --- [main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-05-27 23:28:05.420  INFO 3508 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-05-27 23:28:05.629  INFO 3508 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-05-27 23:28:05.640  INFO 3508 --- [main] b.c.p.w.Boot                             : Started Boot in 18.859 seconds (JVM running for 21.28)
+2017-05-27 23:31:34.625  INFO 4776 --- [main] b.c.p.w.Boot                             : Starting Boot on Paulo with PID 4776 (started by Paulo Roberto in C:\Users\Paulo Roberto\workspace\spring-boot)
+2017-05-27 23:31:34.640  INFO 4776 --- [main] b.c.p.w.Boot                             : No active profile set, falling back to default profiles: default
+2017-05-27 23:31:34.934  INFO 4776 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4c178a76: startup date [Sat May 27 23:31:34 BRT 2017]; root of context hierarchy
+2017-05-27 23:31:35.902  INFO 4776 --- [background-preinit] o.h.v.u.Version                          : Hibernate Validator 4.1.0.Final
+2017-05-27 23:31:35.929  INFO 4776 --- [background-preinit] o.h.v.e.r.DefaultTraversableResolver     : Instantiated an instance of org.hibernate.validator.engine.resolver.JPATraversableResolver.
+2017-05-27 23:31:39.002  INFO 4776 --- [main] o.h.v.e.r.DefaultTraversableResolver     : Instantiated an instance of org.hibernate.validator.engine.resolver.JPATraversableResolver.
+2017-05-27 23:31:39.003  INFO 4776 --- [main] o.h.v.e.r.DefaultTraversableResolver     : Instantiated an instance of org.hibernate.validator.engine.resolver.JPATraversableResolver.
+2017-05-27 23:31:39.671  INFO 4776 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-05-27 23:31:39.702  INFO 4776 --- [main] o.a.c.c.StandardService                  : Starting service Tomcat
+2017-05-27 23:31:39.718  INFO 4776 --- [main] o.a.c.c.StandardEngine                   : Starting Servlet Engine: Apache Tomcat/8.5.14
+2017-05-27 23:31:40.493  INFO 4776 --- [localhost-startStop-1] o.a.j.s.TldScanner                       : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2017-05-27 23:31:40.510  INFO 4776 --- [localhost-startStop-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2017-05-27 23:31:40.511  INFO 4776 --- [localhost-startStop-1] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 5622 ms
+2017-05-27 23:31:40.953  INFO 4776 --- [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2017-05-27 23:31:40.961  INFO 4776 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-05-27 23:31:40.962  INFO 4776 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-05-27 23:31:40.962  INFO 4776 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-05-27 23:31:40.963  INFO 4776 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'requestContextFilter' to: [/*]
+2017-05-27 23:31:44.495  INFO 4776 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-05-27 23:31:44.611  INFO 4776 --- [main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-05-27 23:31:45.504  INFO 4776 --- [main] o.h.Version                              : HHH000412: Hibernate Core {5.0.12.Final}
+2017-05-27 23:31:45.510  INFO 4776 --- [main] o.h.c.Environment                        : HHH000206: hibernate.properties not found
+2017-05-27 23:31:45.534  INFO 4776 --- [main] o.h.c.Environment                        : HHH000021: Bytecode provider name : javassist
+2017-05-27 23:31:46.048  INFO 4776 --- [main] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-05-27 23:31:46.425  INFO 4776 --- [main] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2017-05-27 23:31:47.658  INFO 4776 --- [main] o.h.e.j.e.i.LobCreatorBuilderImpl        : HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2017-05-27 23:31:47.666  INFO 4776 --- [main] o.h.t.BasicTypeRegistry                  : HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@10358c32
+2017-05-27 23:31:48.145  INFO 4776 --- [main] o.h.v.e.r.DefaultTraversableResolver     : Instantiated an instance of org.hibernate.validator.engine.resolver.JPATraversableResolver.
+2017-05-27 23:31:48.214  INFO 4776 --- [main] o.h.t.h.SchemaUpdate                     : HHH000228: Running hbm2ddl schema update
+2017-05-27 23:31:48.377  INFO 4776 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-05-27 23:31:49.486  INFO 4776 --- [main] o.h.v.e.r.DefaultTraversableResolver     : Instantiated an instance of org.hibernate.validator.engine.resolver.JPATraversableResolver.
+2017-05-27 23:31:49.598  INFO 4776 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4c178a76: startup date [Sat May 27 23:31:34 BRT 2017]; root of context hierarchy
+2017-05-27 23:31:49.957  INFO 4776 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String br.com.project.webservice.controllers.HomeController.index()
+2017-05-27 23:31:49.988  INFO 4776 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-05-27 23:31:49.990  INFO 4776 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-05-27 23:31:50.155  INFO 4776 --- [main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-05-27 23:31:50.155  INFO 4776 --- [main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-05-27 23:31:50.412  INFO 4776 --- [main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-05-27 23:31:51.438  INFO 4776 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-05-27 23:31:51.723  INFO 4776 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-05-27 23:31:51.736  INFO 4776 --- [main] b.c.p.w.Boot                             : Started Boot in 18.582 seconds (JVM running for 21.138)
+2017-05-27 23:36:27.198  INFO 13156 --- [main] b.c.p.w.Boot                             : Starting Boot on Paulo with PID 13156 (started by Paulo Roberto in C:\Users\Paulo Roberto\workspace\spring-boot)
+2017-05-27 23:36:27.213  INFO 13156 --- [main] b.c.p.w.Boot                             : No active profile set, falling back to default profiles: default
+2017-05-27 23:36:27.499  INFO 13156 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@24313fcc: startup date [Sat May 27 23:36:27 BRT 2017]; root of context hierarchy
+2017-05-27 23:36:28.526  INFO 13156 --- [background-preinit] o.h.v.u.Version                          : Hibernate Validator 4.1.0.Final
+2017-05-27 23:36:28.587  INFO 13156 --- [background-preinit] o.h.v.e.r.DefaultTraversableResolver     : Instantiated an instance of org.hibernate.validator.engine.resolver.JPATraversableResolver.
+2017-05-27 23:36:31.835  INFO 13156 --- [main] o.h.v.e.r.DefaultTraversableResolver     : Instantiated an instance of org.hibernate.validator.engine.resolver.JPATraversableResolver.
+2017-05-27 23:36:31.836  INFO 13156 --- [main] o.h.v.e.r.DefaultTraversableResolver     : Instantiated an instance of org.hibernate.validator.engine.resolver.JPATraversableResolver.
+2017-05-27 23:36:32.507  INFO 13156 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-05-27 23:36:32.543  INFO 13156 --- [main] o.a.c.c.StandardService                  : Starting service Tomcat
+2017-05-27 23:36:32.543  INFO 13156 --- [main] o.a.c.c.StandardEngine                   : Starting Servlet Engine: Apache Tomcat/8.5.14
+2017-05-27 23:36:33.235  INFO 13156 --- [localhost-startStop-1] o.a.j.s.TldScanner                       : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2017-05-27 23:36:33.252  INFO 13156 --- [localhost-startStop-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2017-05-27 23:36:33.253  INFO 13156 --- [localhost-startStop-1] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 5795 ms
+2017-05-27 23:36:33.665  INFO 13156 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-05-27 23:36:33.666  INFO 13156 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-05-27 23:36:33.666  INFO 13156 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-05-27 23:36:33.667  INFO 13156 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'requestContextFilter' to: [/*]
+2017-05-27 23:36:33.670  INFO 13156 --- [localhost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2017-05-27 23:36:33.671  INFO 13156 --- [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2017-05-27 23:36:36.780  INFO 13156 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-05-27 23:36:36.864  INFO 13156 --- [main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-05-27 23:36:37.129  INFO 13156 --- [main] o.h.Version                              : HHH000412: Hibernate Core {5.0.12.Final}
+2017-05-27 23:36:37.135  INFO 13156 --- [main] o.h.c.Environment                        : HHH000206: hibernate.properties not found
+2017-05-27 23:36:37.139  INFO 13156 --- [main] o.h.c.Environment                        : HHH000021: Bytecode provider name : javassist
+2017-05-27 23:36:37.306  INFO 13156 --- [main] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-05-27 23:36:38.057  INFO 13156 --- [main] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2017-05-27 23:36:39.006  INFO 13156 --- [main] o.h.e.j.e.i.LobCreatorBuilderImpl        : HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2017-05-27 23:36:39.013  INFO 13156 --- [main] o.h.t.BasicTypeRegistry                  : HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@59f93db8
+2017-05-27 23:36:39.477  INFO 13156 --- [main] o.h.v.e.r.DefaultTraversableResolver     : Instantiated an instance of org.hibernate.validator.engine.resolver.JPATraversableResolver.
+2017-05-27 23:36:39.562  INFO 13156 --- [main] o.h.t.h.SchemaUpdate                     : HHH000228: Running hbm2ddl schema update
+2017-05-27 23:36:39.747  INFO 13156 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-05-27 23:36:40.891  INFO 13156 --- [main] o.h.v.e.r.DefaultTraversableResolver     : Instantiated an instance of org.hibernate.validator.engine.resolver.JPATraversableResolver.
+2017-05-27 23:36:41.007  INFO 13156 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@24313fcc: startup date [Sat May 27 23:36:27 BRT 2017]; root of context hierarchy
+2017-05-27 23:36:41.362  INFO 13156 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String br.com.project.webservice.controllers.HomeController.index()
+2017-05-27 23:36:41.396  INFO 13156 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-05-27 23:36:41.398  INFO 13156 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-05-27 23:36:41.576  INFO 13156 --- [main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-05-27 23:36:41.577  INFO 13156 --- [main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-05-27 23:36:41.734  INFO 13156 --- [main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-05-27 23:36:42.703  INFO 13156 --- [main] b.a.s.AuthenticationManagerConfiguration : 
+
+Using default security password: 9555acd0-e3e2-4df6-9ea6-049ea0d4ad17
+
+2017-05-27 23:36:42.870  INFO 13156 --- [main] o.s.s.w.DefaultSecurityFilterChain       : Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/css/**'], Ant [pattern='/js/**'], Ant [pattern='/images/**'], Ant [pattern='/webjars/**'], Ant [pattern='/**/favicon.ico'], Ant [pattern='/error']]], []
+2017-05-27 23:36:43.143  INFO 13156 --- [main] o.s.s.w.DefaultSecurityFilterChain       : Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/**']]], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1235151c, org.springframework.security.web.context.SecurityContextPersistenceFilter@25be445f, org.springframework.security.web.header.HeaderWriterFilter@478b0739, org.springframework.security.web.authentication.logout.LogoutFilter@1450131a, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@3f6f3cc, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6397248c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@40ef0af8, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5a1f778, org.springframework.security.web.session.SessionManagementFilter@609319c3, org.springframework.security.web.access.ExceptionTranslationFilter@7edb6fca, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4f379769]
+2017-05-27 23:36:43.544  INFO 13156 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-05-27 23:36:43.756  INFO 13156 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-05-27 23:36:43.769  INFO 13156 --- [main] b.c.p.w.Boot                             : Started Boot in 18.074 seconds (JVM running for 20.573)
+2017-05-27 23:45:33.271  INFO 9836 --- [main] b.c.p.w.Boot                             : Starting Boot on Paulo with PID 9836 (started by Paulo Roberto in C:\Users\Paulo Roberto\workspace\spring-boot)
+2017-05-27 23:45:33.285  INFO 9836 --- [main] b.c.p.w.Boot                             : No active profile set, falling back to default profiles: default
+2017-05-27 23:45:33.527  INFO 9836 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@24313fcc: startup date [Sat May 27 23:45:33 BRT 2017]; root of context hierarchy
+2017-05-27 23:45:34.453  INFO 9836 --- [background-preinit] o.h.v.u.Version                          : Hibernate Validator 4.1.0.Final
+2017-05-27 23:45:34.474  INFO 9836 --- [background-preinit] o.h.v.e.r.DefaultTraversableResolver     : Instantiated an instance of org.hibernate.validator.engine.resolver.JPATraversableResolver.
+2017-05-27 23:45:38.295  INFO 9836 --- [main] o.h.v.e.r.DefaultTraversableResolver     : Instantiated an instance of org.hibernate.validator.engine.resolver.JPATraversableResolver.
+2017-05-27 23:45:38.297  INFO 9836 --- [main] o.h.v.e.r.DefaultTraversableResolver     : Instantiated an instance of org.hibernate.validator.engine.resolver.JPATraversableResolver.
+2017-05-27 23:45:39.288  INFO 9836 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-05-27 23:45:39.317  INFO 9836 --- [main] o.a.c.c.StandardService                  : Starting service Tomcat
+2017-05-27 23:45:39.321  INFO 9836 --- [main] o.a.c.c.StandardEngine                   : Starting Servlet Engine: Apache Tomcat/8.5.14
+2017-05-27 23:45:40.193  INFO 9836 --- [localhost-startStop-1] o.a.j.s.TldScanner                       : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2017-05-27 23:45:40.210  INFO 9836 --- [localhost-startStop-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2017-05-27 23:45:40.211  INFO 9836 --- [localhost-startStop-1] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 6693 ms
+2017-05-27 23:45:40.919  INFO 9836 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-05-27 23:45:40.920  INFO 9836 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-05-27 23:45:40.921  INFO 9836 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-05-27 23:45:40.921  INFO 9836 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'requestContextFilter' to: [/*]
+2017-05-27 23:45:40.925  INFO 9836 --- [localhost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2017-05-27 23:45:40.925  INFO 9836 --- [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2017-05-27 23:45:44.162  INFO 9836 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-05-27 23:45:44.256  INFO 9836 --- [main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-05-27 23:45:44.560  INFO 9836 --- [main] o.h.Version                              : HHH000412: Hibernate Core {5.0.12.Final}
+2017-05-27 23:45:44.565  INFO 9836 --- [main] o.h.c.Environment                        : HHH000206: hibernate.properties not found
+2017-05-27 23:45:44.570  INFO 9836 --- [main] o.h.c.Environment                        : HHH000021: Bytecode provider name : javassist
+2017-05-27 23:45:44.738  INFO 9836 --- [main] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-05-27 23:45:45.647  INFO 9836 --- [main] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2017-05-27 23:45:46.530  INFO 9836 --- [main] o.h.e.j.e.i.LobCreatorBuilderImpl        : HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2017-05-27 23:45:46.536  INFO 9836 --- [main] o.h.t.BasicTypeRegistry                  : HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@a92be4f
+2017-05-27 23:45:46.951  INFO 9836 --- [main] o.h.v.e.r.DefaultTraversableResolver     : Instantiated an instance of org.hibernate.validator.engine.resolver.JPATraversableResolver.
+2017-05-27 23:45:47.022  INFO 9836 --- [main] o.h.t.h.SchemaUpdate                     : HHH000228: Running hbm2ddl schema update
+2017-05-27 23:45:47.181  INFO 9836 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-05-27 23:45:48.465  INFO 9836 --- [main] b.a.s.AuthenticationManagerConfiguration : 
+
+Using default security password: 29651e8f-e433-4c18-87a5-6134812d3350
+
+2017-05-27 23:45:48.996  INFO 9836 --- [main] o.s.s.w.DefaultSecurityFilterChain       : Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@32456db0, org.springframework.security.web.context.SecurityContextPersistenceFilter@fe87ddd, org.springframework.security.web.header.HeaderWriterFilter@4c0e426a, org.springframework.security.web.authentication.logout.LogoutFilter@45545e7a, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@781711b7, org.springframework.security.web.session.ConcurrentSessionFilter@6361b799, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7c281eb8, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7f9e8421, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5f5827d0, org.springframework.security.web.session.SessionManagementFilter@34d713a2, org.springframework.security.web.access.ExceptionTranslationFilter@4fb04a72, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@57ddd45b]
+2017-05-27 23:45:49.306  INFO 9836 --- [main] o.h.v.e.r.DefaultTraversableResolver     : Instantiated an instance of org.hibernate.validator.engine.resolver.JPATraversableResolver.
+2017-05-27 23:45:49.405  INFO 9836 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@24313fcc: startup date [Sat May 27 23:45:33 BRT 2017]; root of context hierarchy
+2017-05-27 23:45:49.677  INFO 9836 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String br.com.project.webservice.controllers.HomeController.index()
+2017-05-27 23:45:49.687  INFO 9836 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-05-27 23:45:49.689  INFO 9836 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-05-27 23:45:49.925  INFO 9836 --- [main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-05-27 23:45:49.926  INFO 9836 --- [main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-05-27 23:45:50.113  INFO 9836 --- [main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-05-27 23:45:51.014  INFO 9836 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-05-27 23:45:51.194  INFO 9836 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-05-27 23:45:51.205  INFO 9836 --- [main] b.c.p.w.Boot                             : Started Boot in 19.253 seconds (JVM running for 21.762)
+2017-05-27 23:48:49.055  INFO 8196 --- [main] b.c.p.w.Boot                             : Starting Boot on Paulo with PID 8196 (started by Paulo Roberto in C:\Users\Paulo Roberto\workspace\spring-boot)
+2017-05-27 23:48:49.087  INFO 8196 --- [main] b.c.p.w.Boot                             : No active profile set, falling back to default profiles: default
+2017-05-27 23:48:49.374  INFO 8196 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@24313fcc: startup date [Sat May 27 23:48:49 BRT 2017]; root of context hierarchy
+2017-05-27 23:48:50.569  INFO 8196 --- [background-preinit] o.h.v.u.Version                          : Hibernate Validator 4.1.0.Final
+2017-05-27 23:48:50.602  INFO 8196 --- [background-preinit] o.h.v.e.r.DefaultTraversableResolver     : Instantiated an instance of org.hibernate.validator.engine.resolver.JPATraversableResolver.
+2017-05-27 23:48:54.110  INFO 8196 --- [main] o.h.v.e.r.DefaultTraversableResolver     : Instantiated an instance of org.hibernate.validator.engine.resolver.JPATraversableResolver.
+2017-05-27 23:48:54.110  INFO 8196 --- [main] o.h.v.e.r.DefaultTraversableResolver     : Instantiated an instance of org.hibernate.validator.engine.resolver.JPATraversableResolver.
+2017-05-27 23:48:54.736  INFO 8196 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-05-27 23:48:54.753  INFO 8196 --- [main] o.a.c.c.StandardService                  : Starting service Tomcat
+2017-05-27 23:48:54.756  INFO 8196 --- [main] o.a.c.c.StandardEngine                   : Starting Servlet Engine: Apache Tomcat/8.5.14
+2017-05-27 23:48:55.205  INFO 8196 --- [localhost-startStop-1] o.a.j.s.TldScanner                       : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2017-05-27 23:48:55.215  INFO 8196 --- [localhost-startStop-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2017-05-27 23:48:55.216  INFO 8196 --- [localhost-startStop-1] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 5853 ms
+2017-05-27 23:48:55.642  INFO 8196 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-05-27 23:48:55.643  INFO 8196 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-05-27 23:48:55.643  INFO 8196 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-05-27 23:48:55.643  INFO 8196 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'requestContextFilter' to: [/*]
+2017-05-27 23:48:55.645  INFO 8196 --- [localhost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2017-05-27 23:48:55.646  INFO 8196 --- [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2017-05-27 23:48:57.513  INFO 8196 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-05-27 23:48:57.598  INFO 8196 --- [main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-05-27 23:48:58.023  INFO 8196 --- [main] o.h.Version                              : HHH000412: Hibernate Core {5.0.12.Final}
+2017-05-27 23:48:58.028  INFO 8196 --- [main] o.h.c.Environment                        : HHH000206: hibernate.properties not found
+2017-05-27 23:48:58.030  INFO 8196 --- [main] o.h.c.Environment                        : HHH000021: Bytecode provider name : javassist
+2017-05-27 23:48:58.230  INFO 8196 --- [main] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-05-27 23:48:59.027  INFO 8196 --- [main] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2017-05-27 23:48:59.944  INFO 8196 --- [main] o.h.e.j.e.i.LobCreatorBuilderImpl        : HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2017-05-27 23:48:59.959  INFO 8196 --- [main] o.h.t.BasicTypeRegistry                  : HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@25ad4f71
+2017-05-27 23:49:00.467  INFO 8196 --- [main] o.h.v.e.r.DefaultTraversableResolver     : Instantiated an instance of org.hibernate.validator.engine.resolver.JPATraversableResolver.
+2017-05-27 23:49:00.551  INFO 8196 --- [main] o.h.t.h.SchemaUpdate                     : HHH000228: Running hbm2ddl schema update
+2017-05-27 23:49:00.768  INFO 8196 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-05-27 23:49:02.332  INFO 8196 --- [main] b.a.s.AuthenticationManagerConfiguration : 
+
+Using default security password: 90e9bc4e-cfd1-4402-9a3e-dcf3f6db4bb5
+
+2017-05-27 23:49:02.880  INFO 8196 --- [main] o.s.s.w.DefaultSecurityFilterChain       : Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5d3b58ca, org.springframework.security.web.context.SecurityContextPersistenceFilter@79696332, org.springframework.security.web.header.HeaderWriterFilter@343e225a, org.springframework.security.web.authentication.logout.LogoutFilter@3e05586b, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3596b249, org.springframework.security.web.session.ConcurrentSessionFilter@60aec68a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@fe87ddd, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4a8ffd75, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4e224df5, org.springframework.security.web.session.SessionManagementFilter@4c0e426a, org.springframework.security.web.access.ExceptionTranslationFilter@af7e376, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@16a2ed51]
+2017-05-27 23:49:03.359  INFO 8196 --- [main] o.h.v.e.r.DefaultTraversableResolver     : Instantiated an instance of org.hibernate.validator.engine.resolver.JPATraversableResolver.
+2017-05-27 23:49:03.458  INFO 8196 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@24313fcc: startup date [Sat May 27 23:48:49 BRT 2017]; root of context hierarchy
+2017-05-27 23:49:03.765  INFO 8196 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String br.com.project.webservice.controllers.HomeController.index()
+2017-05-27 23:49:03.777  INFO 8196 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-05-27 23:49:03.778  INFO 8196 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-05-27 23:49:03.961  INFO 8196 --- [main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-05-27 23:49:03.962  INFO 8196 --- [main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-05-27 23:49:04.138  INFO 8196 --- [main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-05-27 23:49:04.885  INFO 8196 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-05-27 23:49:05.081  INFO 8196 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-05-27 23:49:05.093  INFO 8196 --- [main] b.c.p.w.Boot                             : Started Boot in 17.539 seconds (JVM running for 20.074)
+2017-05-27 23:49:24.662  INFO 8196 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-05-27 23:49:24.663  INFO 8196 --- [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : FrameworkServlet 'dispatcherServlet': initialization started
+2017-05-27 23:49:24.781  INFO 8196 --- [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : FrameworkServlet 'dispatcherServlet': initialization completed in 117 ms
