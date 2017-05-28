@@ -36,6 +36,7 @@ import com.mchange.v2.c3p0.ComboPooledDataSource;
 @Configuration
 @EnableTransactionManagement
 public class DatabaseConfig {
+	
 	@Bean(name = PROJECT_CONFIGURATION_FILE_BUNDLE_BEAN_ALIAS)
 	@Qualifier(value = PROJECT_CONFIGURATION_FILE_BUNDLE_BEAN_QUALIFIER)
 	public ResourceBundle database() {

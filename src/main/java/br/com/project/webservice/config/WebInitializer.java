@@ -16,6 +16,7 @@ public class WebInitializer extends AbstractAnnotationConfigDispatcherServletIni
 
 	@Override
 	protected String[] getServletMappings() {
+		System.out.println("Testando API");
 		return new String[] { "/api/*" };
 	}
 

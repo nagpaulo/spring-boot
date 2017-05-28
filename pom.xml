@@ -144,6 +144,7 @@
 				<filtering>true</filtering>
 				<includes>
 					<include>project.properties</include>
+					<include>application.properties</include>
 					<include>logback.xml</include>
 				</includes>
 			</resource>

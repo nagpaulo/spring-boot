@@ -71,4 +71,5 @@ private List<String> allowedOrigins = new ArrayList<>();
         source.setDefaultEncoding("UTF-8");
         return source;
     }
-}	
+	
+}
