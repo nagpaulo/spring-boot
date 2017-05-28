@@ -30,18 +30,15 @@
 		<dependency>
 			<groupId>org.postgresql</groupId>
 			<artifactId>postgresql</artifactId>
-			<version>9.4-1201-jdbc41</version>
 		</dependency>
 		<dependency>
 			<groupId>javax.validation</groupId>
 			<artifactId>validation-api</artifactId>
-			<version>1.0.0.GA</version>
 			<scope>compile</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.hibernate</groupId>
 			<artifactId>hibernate-validator</artifactId>
-			<version>4.1.0.Final</version>
 			<scope>compile</scope>
 		</dependency>
 		<dependency>
@@ -70,9 +67,9 @@
 			<scope>compile</scope>
 		</dependency>
 		<dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-security</artifactId>
-        </dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-security</artifactId>
+		</dependency>
 		<dependency>
 			<groupId>javax.servlet.jsp.jstl</groupId>
 			<artifactId>jstl-api</artifactId>
@@ -104,6 +101,12 @@
 					<groupId>javax.servlet.jsp</groupId>
 				</exclusion>
 			</exclusions>
+		</dependency>
+		<dependency>
+			<groupId>c3p0</groupId>
+			<artifactId>c3p0</artifactId>
+			<version>0.9.1.2</version>
+			<scope>compile</scope>
 		</dependency>
 	</dependencies>
 	<repositories>
@@ -140,4 +143,70 @@
 			</plugin>
 		</plugins>
 	</build>
+	
+	<profiles>
+		<profile>
+			<activation>
+				<activeByDefault>true</activeByDefault>
+			</activation>
+			<id>DESENVOLVIMENTO</id>
+			<properties>
+				<activeProfile>DESENVOLVIMENTO</activeProfile>
+				<logger.level>INFO</logger.level>
+				<logger.appender>console</logger.appender>
+				<jpa.show_sql>true</jpa.show_sql>
+				<jpa.format_sql>true</jpa.format_sql>
+				<postgres.url>jdbc:postgresql://localhost:5433/labnascimento</postgres.url>
+				<postgres.username>postgres</postgres.username>
+				<postgres.password>postgres</postgres.password>
+				<postgres.hibernate.temp.use_jdbc_metadata_defaults>false</postgres.hibernate.temp.use_jdbc_metadata_defaults>
+
+				<!-- Caminho para o ponto de montagem em producao -->
+				<conf.pathFiles>C:\\temp\\</conf.pathFiles>
+				<conf.pathFiles2>C:\\temp\\</conf.pathFiles2>
+			</properties>
+		</profile>
+		
+		<profile>
+			<!-- <activation>
+				<activeByDefault>true</activeByDefault>
+			</activation> -->
+			<id>DESENVOLVIMENTO-SED</id>
+			<properties>
+				<activeProfile>DESENVOLVIMENTO</activeProfile>
+				<logger.level>INFO</logger.level>
+				<logger.appender>console</logger.appender>
+				<jpa.show_sql>true</jpa.show_sql>
+				<jpa.format_sql>true</jpa.format_sql>
+				<postgres.url>jdbc:postgresql://localhost:5432/tethys</postgres.url>
+				<postgres.username>postgres</postgres.username>
+				<postgres.password>postgres</postgres.password>
+				<postgres.hibernate.temp.use_jdbc_metadata_defaults>false</postgres.hibernate.temp.use_jdbc_metadata_defaults>
+
+				<!-- Caminho para o ponto de montagem em producao -->
+				<conf.pathFiles>C:\\temp\\</conf.pathFiles>
+				<conf.pathFiles2>C:\\temp\\</conf.pathFiles2>
+			</properties>
+		</profile>
+
+		<profile>
+			<id>PRODUCAO</id>
+			<properties>
+				<activeProfile>PRODUCAO</activeProfile>
+				<logger.level>ERROR</logger.level>
+				<logger.appender>file</logger.appender>
+				<jpa.show_sql>false</jpa.show_sql>
+				<jpa.format_sql>false</jpa.format_sql>
+				<postgres.url>jdbc:postgresql://172.31.4.25/seduc</postgres.url>
+				<postgres.username>enem</postgres.username>
+				<postgres.password>enem</postgres.password>
+				<postgres.hibernate.temp.use_jdbc_metadata_defaults>false</postgres.hibernate.temp.use_jdbc_metadata_defaults>
+				<oracle.url>jdbc:oracle:thin:@172.31.4.28:1521:seduc</oracle.url>
+				<oracle.username>SIGERHWEB</oracle.username>
+				<oracle.password>PAXETBONUM</oracle.password>
+				<!-- Caminho para o ponto de montagem em producao -->
+				<conf.pathFiles>/mnt/sige_vt/</conf.pathFiles>
+			</properties>
+		</profile>
+	</profiles>
 </project>
