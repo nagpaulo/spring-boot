@@ -9,6 +9,8 @@ import javax.servlet.http.HttpServletResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.security.authentication.AuthenticationManager;
+import org.springframework.security.config.BeanIds;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
@@ -17,13 +19,45 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.web.authentication.logout.LogoutHandler;
+import org.springframework.security.web.session.HttpSessionEventPublisher;
+
+import br.com.project.webservice.auth.model.Modulo;
+import br.com.project.webservice.auth.model.Usuario;
+import br.com.project.webservice.auth.model.UsuarioAcesso;
+import br.com.project.webservice.auth.repository.ModuloRepository;
+import br.com.project.webservice.auth.repository.UsuarioAcessoRepository;
+import br.com.project.webservice.auth.repository.UsuarioRepository;
 
 @Configuration
 @EnableWebSecurity
 @EnableGlobalMethodSecurity(prePostEnabled = true)
 public class SecurityConfig extends WebSecurityConfigurerAdapter{
+
+	@Bean(name = BeanIds.AUTHENTICATION_MANAGER)
+	@Override
+	public AuthenticationManager authenticationManagerBean() throws Exception {
+		return super.authenticationManagerBean();
+	}
+	
+	@Bean
+	public HttpSessionEventPublisher httpSessionEventPublisher() {
+	    return new HttpSessionEventPublisher();
+	}
+
+	@Autowired
+	private UsuarioAcessoRepository usuarioAcessoRepository;
+	
+	@Autowired
+	private ModuloRepository moduloRepository;
+	
+	@Autowired
+    private UsuarioRepository userRepository;
+	
+	@Autowired
+	private UserDetailsService userDetailsService;
 
 	@Bean
 	public BCryptPasswordEncoder bCryptPasswordEncoder() {
@@ -44,7 +78,6 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter{
 				public void logout(HttpServletRequest arg0, HttpServletResponse arg1, Authentication arg2){
 						ResourceBundle resource = ResourceBundle.getBundle("project");
 				    	Long moduloId = Long.parseLong(resource.getString("modulo.id"));
-				    	/*
 				    	Modulo modulo = moduloRepository.findOne(moduloId);    	
 				    	
 				    	Authentication auth = SecurityContextHolder.getContext().getAuthentication();
@@ -54,7 +87,6 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter{
 						UsuarioAcesso access = usuarioAcessoRepository.findByUsuarioAndModulo(usuario, modulo);
 						access.setDataFim(Calendar.getInstance().getTime());
 						usuarioAcessoRepository.save(access);
-						*/
 
 				}
 			}).permitAll();
@@ -67,7 +99,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter{
 
 	@Autowired
 	public void configureGlobal(AuthenticationManagerBuilder auth) throws Exception {
-		//auth.userDetailsService(userDetailsService).passwordEncoder(bCryptPasswordEncoder());
+		auth.userDetailsService(userDetailsService).passwordEncoder(bCryptPasswordEncoder());
 	}
 	
 }

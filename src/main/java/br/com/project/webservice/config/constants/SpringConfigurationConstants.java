@@ -28,7 +28,7 @@ public interface SpringConfigurationConstants {
 
 	String POSTGRE_PERSISTENT_UNIT_NAME = "postgresPU";
 
-	String[] POSTGRE_ENTITY_PACKAGES_TO_SCAN = new String[] { "br.com.project.webservice.entity",
+	String[] POSTGRE_ENTITY_PACKAGES_TO_SCAN = new String[] { "br.com.project.webservice.entity", "br.com.project.webservice.models",
 			"br.com.project.webservice.auth.model" };
 
 	String POSTGRE_MYBATIS_MAPPER_PACKAGE_TO_SCAN = "br.com.project.webservice.dao.mappers.postgres";

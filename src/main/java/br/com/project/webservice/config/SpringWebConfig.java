@@ -20,7 +20,7 @@ import org.springframework.web.servlet.view.JstlView;
 
 @Configuration
 @EnableWebMvc
-@ComponentScan(basePackages={"br.com.modelo.tethys.controllers"})
+@ComponentScan(basePackages={"br.com.project.webservice.controllers"})
 @PropertySource("classpath:project.properties")
 @EnableGlobalMethodSecurity(securedEnabled = true , jsr250Enabled = true, proxyTargetClass = true)//Needs to be here or will not work for the controllers
 public class SpringWebConfig extends WebMvcConfigurerAdapter{

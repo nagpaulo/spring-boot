@@ -1374,3 +1374,687 @@ Using default security password: bbae1ad0-8c71-465d-978c-7a9b068f6dd6
 2017-05-28 09:58:34.111  INFO 12352 --- [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : FrameworkServlet 'dispatcherServlet': initialization started
 2017-05-28 09:58:34.214  INFO 12352 --- [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : FrameworkServlet 'dispatcherServlet': initialization completed in 98 ms
 2017-05-28 09:58:34.358  WARN 12352 --- [http-nio-8080-exec-1] o.s.w.s.PageNotFound                     : No mapping found for HTTP request with URI [/api/home] in DispatcherServlet with name 'dispatcherServlet'
+2017-05-28 10:07:58.891  INFO 2228 --- [main] b.c.p.w.Boot                             : Starting Boot on Paulo with PID 2228 (started by Paulo Roberto in C:\Users\Paulo Roberto\workspace\spring-boot)
+2017-05-28 10:07:58.909  INFO 2228 --- [main] b.c.p.w.Boot                             : No active profile set, falling back to default profiles: default
+2017-05-28 10:07:59.197  INFO 2228 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6c40365c: startup date [Sun May 28 10:07:59 BRT 2017]; root of context hierarchy
+2017-05-28 10:08:04.509  INFO 2228 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-05-28 10:08:04.534  INFO 2228 --- [main] o.a.c.c.StandardService                  : Starting service Tomcat
+2017-05-28 10:08:04.536  INFO 2228 --- [main] o.a.c.c.StandardEngine                   : Starting Servlet Engine: Apache Tomcat/8.5.14
+2017-05-28 10:08:05.162  INFO 2228 --- [localhost-startStop-1] o.a.j.s.TldScanner                       : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2017-05-28 10:08:05.173  INFO 2228 --- [localhost-startStop-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2017-05-28 10:08:05.173  INFO 2228 --- [localhost-startStop-1] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 5985 ms
+2017-05-28 10:08:05.592  INFO 2228 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-05-28 10:08:05.604  INFO 2228 --- [localhost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2017-05-28 10:08:05.604  INFO 2228 --- [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2017-05-28 10:08:05.707  INFO 2228 --- [main] c.m.v.l.MLog                             : MLog clients using java 1.4+ standard logging.
+2017-05-28 10:08:05.750  INFO 2228 --- [main] c.m.v.c.C3P0Registry                     : Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+2017-05-28 10:08:05.955  INFO 2228 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'postgresPU'
+2017-05-28 10:08:05.972  INFO 2228 --- [main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [
+	name: postgresPU
+	...]
+2017-05-28 10:08:06.104  INFO 2228 --- [main] o.h.Version                              : HHH000412: Hibernate Core {5.0.12.Final}
+2017-05-28 10:08:06.104  INFO 2228 --- [main] o.h.c.Environment                        : HHH000206: hibernate.properties not found
+2017-05-28 10:08:06.104  INFO 2228 --- [main] o.h.c.Environment                        : HHH000021: Bytecode provider name : javassist
+2017-05-28 10:08:06.157  INFO 2228 --- [main] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-05-28 10:08:06.536  INFO 2228 --- [main] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2017-05-28 10:08:06.574  INFO 2228 --- [main] o.h.e.j.e.i.LobCreatorBuilderImpl        : HHH000422: Disabling contextual LOB creation as connection was null
+2017-05-28 10:08:06.574  INFO 2228 --- [main] o.h.t.BasicTypeRegistry                  : HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@fb6097b
+2017-05-28 10:08:07.038  INFO 2228 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'postgresPU'
+2017-05-28 10:08:08.126  INFO 2228 --- [main] b.a.s.AuthenticationManagerConfiguration : 
+
+Using default security password: 6a44e441-60cf-4cbb-a31f-415cccb3c5a4
+
+2017-05-28 10:08:08.764  INFO 2228 --- [main] o.s.s.w.DefaultSecurityFilterChain       : Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3bed3315, org.springframework.security.web.context.SecurityContextPersistenceFilter@3d1f558a, org.springframework.security.web.header.HeaderWriterFilter@4462efe1, org.springframework.security.web.authentication.logout.LogoutFilter@1d61a348, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7d247660, org.springframework.security.web.session.ConcurrentSessionFilter@2629d5dc, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@28f4f300, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2f7efd0b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@119b0892, org.springframework.security.web.session.SessionManagementFilter@2db4ad1, org.springframework.security.web.access.ExceptionTranslationFilter@1b5a1d85, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5626d18c]
+2017-05-28 10:08:09.184  INFO 2228 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String br.com.project.webservice.controllers.HomeController.index()
+2017-05-28 10:08:09.201  INFO 2228 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-05-28 10:08:09.203  INFO 2228 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-05-28 10:08:09.355  INFO 2228 --- [main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/resources/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-05-28 10:08:09.539  INFO 2228 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6c40365c: startup date [Sun May 28 10:07:59 BRT 2017]; root of context hierarchy
+2017-05-28 10:08:10.555  INFO 2228 --- [main] c.m.v.c.i.AbstractPoolBackedDataSource   : Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 1, acquireRetryAttempts -> 15, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 30000, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hge0yv9olytd63a3dlfa|1bcf67e8, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> org.postgresql.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge0yv9olytd63a3dlfa|1bcf67e8, idleConnectionTestPeriod -> 60, initialPoolSize -> 1, jdbcUrl -> jdbc:postgresql://localhost:5433/labnascimento, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 10, maxIdleTime -> 30000, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 10, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 1, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> SELECT 1, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> true, testConnectionOnCheckout -> true, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+2017-05-28 10:08:11.398  INFO 2228 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-05-28 10:08:11.568  INFO 2228 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-05-28 10:08:11.581  INFO 2228 --- [main] b.c.p.w.Boot                             : Started Boot in 14.233 seconds (JVM running for 16.293)
+2017-05-28 10:08:46.210  INFO 12480 --- [main] b.c.p.w.Boot                             : Starting Boot on Paulo with PID 12480 (started by Paulo Roberto in C:\Users\Paulo Roberto\workspace\spring-boot)
+2017-05-28 10:08:46.223  INFO 12480 --- [main] b.c.p.w.Boot                             : No active profile set, falling back to default profiles: default
+2017-05-28 10:08:46.439  INFO 12480 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6c40365c: startup date [Sun May 28 10:08:46 BRT 2017]; root of context hierarchy
+2017-05-28 10:08:53.711  INFO 12480 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-05-28 10:08:53.737  INFO 12480 --- [main] o.a.c.c.StandardService                  : Starting service Tomcat
+2017-05-28 10:08:53.740  INFO 12480 --- [main] o.a.c.c.StandardEngine                   : Starting Servlet Engine: Apache Tomcat/8.5.14
+2017-05-28 10:08:54.507  INFO 12480 --- [localhost-startStop-1] o.a.j.s.TldScanner                       : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2017-05-28 10:08:54.521  INFO 12480 --- [localhost-startStop-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2017-05-28 10:08:54.522  INFO 12480 --- [localhost-startStop-1] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 8096 ms
+2017-05-28 10:08:54.958  INFO 12480 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-05-28 10:08:54.964  INFO 12480 --- [localhost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2017-05-28 10:08:54.965  INFO 12480 --- [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2017-05-28 10:08:55.122  INFO 12480 --- [main] c.m.v.l.MLog                             : MLog clients using java 1.4+ standard logging.
+2017-05-28 10:08:55.172  INFO 12480 --- [main] c.m.v.c.C3P0Registry                     : Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+2017-05-28 10:08:55.486  INFO 12480 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'postgresPU'
+2017-05-28 10:08:55.531  INFO 12480 --- [main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [
+	name: postgresPU
+	...]
+2017-05-28 10:08:55.707  INFO 12480 --- [main] o.h.Version                              : HHH000412: Hibernate Core {5.0.12.Final}
+2017-05-28 10:08:55.713  INFO 12480 --- [main] o.h.c.Environment                        : HHH000206: hibernate.properties not found
+2017-05-28 10:08:55.715  INFO 12480 --- [main] o.h.c.Environment                        : HHH000021: Bytecode provider name : javassist
+2017-05-28 10:08:55.811  INFO 12480 --- [main] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-05-28 10:08:56.259  INFO 12480 --- [main] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2017-05-28 10:08:56.294  INFO 12480 --- [main] o.h.e.j.e.i.LobCreatorBuilderImpl        : HHH000422: Disabling contextual LOB creation as connection was null
+2017-05-28 10:08:56.298  INFO 12480 --- [main] o.h.t.BasicTypeRegistry                  : HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@3e15bb06
+2017-05-28 10:08:56.874  INFO 12480 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'postgresPU'
+2017-05-28 10:08:57.772  INFO 12480 --- [main] b.a.s.AuthenticationManagerConfiguration : 
+
+Using default security password: 9e0d5ad4-5ae6-41ae-869b-a2d93c406ceb
+
+2017-05-28 10:08:58.322  INFO 12480 --- [main] o.s.s.w.DefaultSecurityFilterChain       : Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@35c9a231, org.springframework.security.web.context.SecurityContextPersistenceFilter@54755dd9, org.springframework.security.web.header.HeaderWriterFilter@4ee25d80, org.springframework.security.web.authentication.logout.LogoutFilter@2596d7f4, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@34332b8d, org.springframework.security.web.session.ConcurrentSessionFilter@28237492, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4462efe1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2bfb583b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7a4d582c, org.springframework.security.web.session.SessionManagementFilter@ba17be6, org.springframework.security.web.access.ExceptionTranslationFilter@3679d92e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6e3ecf5c]
+2017-05-28 10:08:58.775  INFO 12480 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String br.com.project.webservice.controllers.HomeController.index()
+2017-05-28 10:08:58.790  INFO 12480 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-05-28 10:08:58.792  INFO 12480 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-05-28 10:08:59.008  INFO 12480 --- [main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/resources/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-05-28 10:08:59.233  INFO 12480 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6c40365c: startup date [Sun May 28 10:08:46 BRT 2017]; root of context hierarchy
+2017-05-28 10:09:00.423  INFO 12480 --- [main] c.m.v.c.i.AbstractPoolBackedDataSource   : Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 1, acquireRetryAttempts -> 15, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 30000, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hge0yv9olyufaq1g13fb2|6ceb7b5e, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> org.postgresql.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge0yv9olyufaq1g13fb2|6ceb7b5e, idleConnectionTestPeriod -> 60, initialPoolSize -> 1, jdbcUrl -> jdbc:postgresql://localhost:5433/labnascimento, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 10, maxIdleTime -> 30000, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 10, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 1, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> SELECT 1, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> true, testConnectionOnCheckout -> true, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+2017-05-28 10:09:01.254  INFO 12480 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-05-28 10:09:01.454  INFO 12480 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-05-28 10:09:01.463  INFO 12480 --- [main] b.c.p.w.Boot                             : Started Boot in 16.726 seconds (JVM running for 19.288)
+2017-05-28 10:10:03.624  INFO 9392 --- [main] b.c.p.w.Boot                             : Starting Boot on Paulo with PID 9392 (started by Paulo Roberto in C:\Users\Paulo Roberto\workspace\spring-boot)
+2017-05-28 10:10:03.636  INFO 9392 --- [main] b.c.p.w.Boot                             : No active profile set, falling back to default profiles: default
+2017-05-28 10:10:03.879  INFO 9392 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6c40365c: startup date [Sun May 28 10:10:03 BRT 2017]; root of context hierarchy
+2017-05-28 10:10:11.095  INFO 9392 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-05-28 10:10:11.121  INFO 9392 --- [main] o.a.c.c.StandardService                  : Starting service Tomcat
+2017-05-28 10:10:11.123  INFO 9392 --- [main] o.a.c.c.StandardEngine                   : Starting Servlet Engine: Apache Tomcat/8.5.14
+2017-05-28 10:10:11.848  INFO 9392 --- [localhost-startStop-1] o.a.j.s.TldScanner                       : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2017-05-28 10:10:11.865  INFO 9392 --- [localhost-startStop-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2017-05-28 10:10:11.865  INFO 9392 --- [localhost-startStop-1] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 7994 ms
+2017-05-28 10:10:12.255  INFO 9392 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-05-28 10:10:12.258  INFO 9392 --- [localhost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2017-05-28 10:10:12.259  INFO 9392 --- [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2017-05-28 10:10:12.397  INFO 9392 --- [main] c.m.v.l.MLog                             : MLog clients using java 1.4+ standard logging.
+2017-05-28 10:10:12.449  INFO 9392 --- [main] c.m.v.c.C3P0Registry                     : Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+2017-05-28 10:10:12.740  INFO 9392 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'postgresPU'
+2017-05-28 10:10:12.784  INFO 9392 --- [main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [
+	name: postgresPU
+	...]
+2017-05-28 10:10:12.987  INFO 9392 --- [main] o.h.Version                              : HHH000412: Hibernate Core {5.0.12.Final}
+2017-05-28 10:10:12.990  INFO 9392 --- [main] o.h.c.Environment                        : HHH000206: hibernate.properties not found
+2017-05-28 10:10:12.993  INFO 9392 --- [main] o.h.c.Environment                        : HHH000021: Bytecode provider name : javassist
+2017-05-28 10:10:13.070  INFO 9392 --- [main] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-05-28 10:10:13.456  INFO 9392 --- [main] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2017-05-28 10:10:13.483  INFO 9392 --- [main] o.h.e.j.e.i.LobCreatorBuilderImpl        : HHH000422: Disabling contextual LOB creation as connection was null
+2017-05-28 10:10:13.498  INFO 9392 --- [main] o.h.t.BasicTypeRegistry                  : HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@fb6097b
+2017-05-28 10:10:14.016  INFO 9392 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'postgresPU'
+2017-05-28 10:10:14.926  INFO 9392 --- [main] b.a.s.AuthenticationManagerConfiguration : 
+
+Using default security password: 3148ea6e-7093-43bd-a86b-5982b93e5dab
+
+2017-05-28 10:10:15.561  INFO 9392 --- [main] o.s.s.w.DefaultSecurityFilterChain       : Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3bed3315, org.springframework.security.web.context.SecurityContextPersistenceFilter@3d1f558a, org.springframework.security.web.header.HeaderWriterFilter@4462efe1, org.springframework.security.web.authentication.logout.LogoutFilter@1d61a348, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7d247660, org.springframework.security.web.session.ConcurrentSessionFilter@2629d5dc, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@28f4f300, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2f7efd0b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@119b0892, org.springframework.security.web.session.SessionManagementFilter@2db4ad1, org.springframework.security.web.access.ExceptionTranslationFilter@1b5a1d85, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5626d18c]
+2017-05-28 10:10:15.999  INFO 9392 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String br.com.project.webservice.controllers.HomeController.index()
+2017-05-28 10:10:16.014  INFO 9392 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-05-28 10:10:16.016  INFO 9392 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-05-28 10:10:16.191  INFO 9392 --- [main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/resources/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-05-28 10:10:16.384  INFO 9392 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6c40365c: startup date [Sun May 28 10:10:03 BRT 2017]; root of context hierarchy
+2017-05-28 10:10:17.423  INFO 9392 --- [main] c.m.v.c.i.AbstractPoolBackedDataSource   : Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 1, acquireRetryAttempts -> 15, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 30000, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hge0yv9olyw2xeb7t3o|1bcf67e8, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> org.postgresql.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge0yv9olyw2xeb7t3o|1bcf67e8, idleConnectionTestPeriod -> 60, initialPoolSize -> 1, jdbcUrl -> ${postgres.url}, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 10, maxIdleTime -> 30000, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 10, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 1, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> SELECT 1, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> true, testConnectionOnCheckout -> true, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+2017-05-28 10:10:31.550  WARN 9392 --- [com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0] c.m.v.r.BasicResourcePool                : com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@4ea1e384 -- Acquisition Attempt Failed!!! Clearing pending acquires. While trying to acquire a needed new resource, we failed to succeed more than the maximum number of allowed acquisition attempts (15). Last acquisition attempt exception: 
+
+java.sql.SQLException: No suitable driver
+	at java.sql.DriverManager.getDriver(Unknown Source) ~[?:1.8.0_131]
+	at com.mchange.v2.c3p0.DriverManagerDataSource.driver(DriverManagerDataSource.java:223) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:134) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:182) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:171) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:137) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1014) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$800(BasicResourcePool.java:32) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask.run(BasicResourcePool.java:1810) [c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547) [c3p0-0.9.1.2.jar:0.9.1.2]
+
+2017-05-28 10:10:31.550  WARN 9392 --- [com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2] c.m.v.r.BasicResourcePool                : com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@209771ce -- Acquisition Attempt Failed!!! Clearing pending acquires. While trying to acquire a needed new resource, we failed to succeed more than the maximum number of allowed acquisition attempts (15). Last acquisition attempt exception: 
+
+java.sql.SQLException: No suitable driver
+	at java.sql.DriverManager.getDriver(Unknown Source) ~[?:1.8.0_131]
+	at com.mchange.v2.c3p0.DriverManagerDataSource.driver(DriverManagerDataSource.java:223) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:134) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:182) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:171) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:137) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1014) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$800(BasicResourcePool.java:32) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask.run(BasicResourcePool.java:1810) [c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547) [c3p0-0.9.1.2.jar:0.9.1.2]
+
+2017-05-28 10:10:31.571  WARN 9392 --- [main] o.s.b.a.o.j.DatabaseLookup               : Unable to determine jdbc url from datasource
+
+org.springframework.jdbc.support.MetaDataAccessException: Could not get Connection for extracting meta data; nested exception is org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is java.sql.SQLException: Connections could not be acquired from the underlying database!
+	at org.springframework.jdbc.support.JdbcUtils.extractDatabaseMetaData(JdbcUtils.java:339) ~[spring-jdbc-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.jdbc.support.JdbcUtils.extractDatabaseMetaData(JdbcUtils.java:366) ~[spring-jdbc-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.boot.autoconfigure.orm.jpa.DatabaseLookup.getDatabase(DatabaseLookup.java:72) [spring-boot-autoconfigure-1.5.3.RELEASE.jar:1.5.3.RELEASE]
+	at org.springframework.boot.autoconfigure.orm.jpa.JpaProperties.determineDatabase(JpaProperties.java:139) [spring-boot-autoconfigure-1.5.3.RELEASE.jar:1.5.3.RELEASE]
+	at org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration.jpaVendorAdapter(JpaBaseConfiguration.java:105) [spring-boot-autoconfigure-1.5.3.RELEASE.jar:1.5.3.RELEASE]
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration$$EnhancerBySpringCGLIB$$296af18a.CGLIB$jpaVendorAdapter$10(<generated>) [spring-boot-autoconfigure-1.5.3.RELEASE.jar:1.5.3.RELEASE]
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration$$EnhancerBySpringCGLIB$$296af18a$$FastClassBySpringCGLIB$$75889aa4.invoke(<generated>) [spring-boot-autoconfigure-1.5.3.RELEASE.jar:1.5.3.RELEASE]
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228) [spring-core-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:358) [spring-context-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration$$EnhancerBySpringCGLIB$$296af18a.jpaVendorAdapter(<generated>) [spring-boot-autoconfigure-1.5.3.RELEASE.jar:1.5.3.RELEASE]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_131]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_131]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_131]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_131]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:162) [spring-beans-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:588) [spring-beans-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1173) [spring-beans-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1067) [spring-beans-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513) [spring-beans-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483) [spring-beans-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) [spring-beans-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) [spring-beans-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) [spring-beans-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197) [spring-beans-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761) [spring-beans-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:866) [spring-context-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:542) [spring-context-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) [spring-boot-1.5.3.RELEASE.jar:1.5.3.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:737) [spring-boot-1.5.3.RELEASE.jar:1.5.3.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:370) [spring-boot-1.5.3.RELEASE.jar:1.5.3.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:314) [spring-boot-1.5.3.RELEASE.jar:1.5.3.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1162) [spring-boot-1.5.3.RELEASE.jar:1.5.3.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1151) [spring-boot-1.5.3.RELEASE.jar:1.5.3.RELEASE]
+	at br.com.project.webservice.Boot.main(Boot.java:12) [classes/:?]
+Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is java.sql.SQLException: Connections could not be acquired from the underlying database!
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:80) ~[spring-jdbc-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.jdbc.support.JdbcUtils.extractDatabaseMetaData(JdbcUtils.java:326) ~[spring-jdbc-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	... 33 more
+Caused by: java.sql.SQLException: Connections could not be acquired from the underlying database!
+	at com.mchange.v2.sql.SqlUtils.toSQLException(SqlUtils.java:106) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool.checkoutPooledConnection(C3P0PooledConnectionPool.java:529) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource.getConnection(AbstractPoolBackedDataSource.java:128) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:111) ~[spring-jdbc-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:77) ~[spring-jdbc-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.jdbc.support.JdbcUtils.extractDatabaseMetaData(JdbcUtils.java:326) ~[spring-jdbc-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	... 33 more
+Caused by: com.mchange.v2.resourcepool.CannotAcquireResourceException: A ResourcePool could not acquire a resource from its primary factory or source.
+	at com.mchange.v2.resourcepool.BasicResourcePool.awaitAvailable(BasicResourcePool.java:1319) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.resourcepool.BasicResourcePool.prelimCheckoutResource(BasicResourcePool.java:557) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.resourcepool.BasicResourcePool.checkoutResource(BasicResourcePool.java:477) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool.checkoutPooledConnection(C3P0PooledConnectionPool.java:525) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource.getConnection(AbstractPoolBackedDataSource.java:128) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:111) ~[spring-jdbc-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:77) ~[spring-jdbc-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.jdbc.support.JdbcUtils.extractDatabaseMetaData(JdbcUtils.java:326) ~[spring-jdbc-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	... 33 more
+
+2017-05-28 10:10:32.465  INFO 9392 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-05-28 10:10:32.742  INFO 9392 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-05-28 10:10:32.759  INFO 9392 --- [main] b.c.p.w.Boot                             : Started Boot in 30.59 seconds (JVM running for 33.035)
+2017-05-28 10:10:46.548  WARN 9392 --- [com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2] c.m.v.r.BasicResourcePool                : com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@4633d939 -- Acquisition Attempt Failed!!! Clearing pending acquires. While trying to acquire a needed new resource, we failed to succeed more than the maximum number of allowed acquisition attempts (15). Last acquisition attempt exception: 
+
+java.sql.SQLException: No suitable driver
+	at java.sql.DriverManager.getDriver(Unknown Source) ~[?:1.8.0_131]
+	at com.mchange.v2.c3p0.DriverManagerDataSource.driver(DriverManagerDataSource.java:223) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:134) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:182) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:171) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:137) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1014) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$800(BasicResourcePool.java:32) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask.run(BasicResourcePool.java:1810) [c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547) [c3p0-0.9.1.2.jar:0.9.1.2]
+
+2017-05-28 10:10:46.570  WARN 9392 --- [com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1] c.m.v.r.BasicResourcePool                : com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@399dad9b -- Acquisition Attempt Failed!!! Clearing pending acquires. While trying to acquire a needed new resource, we failed to succeed more than the maximum number of allowed acquisition attempts (15). Last acquisition attempt exception: 
+
+java.sql.SQLException: No suitable driver
+	at java.sql.DriverManager.getDriver(Unknown Source) ~[?:1.8.0_131]
+	at com.mchange.v2.c3p0.DriverManagerDataSource.driver(DriverManagerDataSource.java:223) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:134) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:182) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:171) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:137) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1014) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$800(BasicResourcePool.java:32) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask.run(BasicResourcePool.java:1810) [c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547) [c3p0-0.9.1.2.jar:0.9.1.2]
+
+2017-05-28 10:11:01.594  WARN 9392 --- [com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1] c.m.v.r.BasicResourcePool                : com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@375a44d8 -- Acquisition Attempt Failed!!! Clearing pending acquires. While trying to acquire a needed new resource, we failed to succeed more than the maximum number of allowed acquisition attempts (15). Last acquisition attempt exception: 
+
+java.sql.SQLException: No suitable driver
+	at java.sql.DriverManager.getDriver(Unknown Source) ~[?:1.8.0_131]
+	at com.mchange.v2.c3p0.DriverManagerDataSource.driver(DriverManagerDataSource.java:223) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:134) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:182) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:171) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:137) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1014) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$800(BasicResourcePool.java:32) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask.run(BasicResourcePool.java:1810) [c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547) [c3p0-0.9.1.2.jar:0.9.1.2]
+
+2017-05-28 10:11:01.594  WARN 9392 --- [com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0] c.m.v.r.BasicResourcePool                : com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@15b0e1b -- Acquisition Attempt Failed!!! Clearing pending acquires. While trying to acquire a needed new resource, we failed to succeed more than the maximum number of allowed acquisition attempts (15). Last acquisition attempt exception: 
+
+java.sql.SQLException: No suitable driver
+	at java.sql.DriverManager.getDriver(Unknown Source) ~[?:1.8.0_131]
+	at com.mchange.v2.c3p0.DriverManagerDataSource.driver(DriverManagerDataSource.java:223) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:134) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:182) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:171) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:137) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1014) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$800(BasicResourcePool.java:32) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask.run(BasicResourcePool.java:1810) [c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547) [c3p0-0.9.1.2.jar:0.9.1.2]
+
+2017-05-28 10:11:16.603  WARN 9392 --- [com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2] c.m.v.r.BasicResourcePool                : com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@44b46ec7 -- Acquisition Attempt Failed!!! Clearing pending acquires. While trying to acquire a needed new resource, we failed to succeed more than the maximum number of allowed acquisition attempts (15). Last acquisition attempt exception: 
+
+java.sql.SQLException: No suitable driver
+	at java.sql.DriverManager.getDriver(Unknown Source) ~[?:1.8.0_131]
+	at com.mchange.v2.c3p0.DriverManagerDataSource.driver(DriverManagerDataSource.java:223) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:134) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:182) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:171) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:137) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1014) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$800(BasicResourcePool.java:32) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask.run(BasicResourcePool.java:1810) [c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547) [c3p0-0.9.1.2.jar:0.9.1.2]
+
+2017-05-28 10:11:16.603  WARN 9392 --- [com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0] c.m.v.r.BasicResourcePool                : com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@40277077 -- Acquisition Attempt Failed!!! Clearing pending acquires. While trying to acquire a needed new resource, we failed to succeed more than the maximum number of allowed acquisition attempts (15). Last acquisition attempt exception: 
+
+java.sql.SQLException: No suitable driver
+	at java.sql.DriverManager.getDriver(Unknown Source) ~[?:1.8.0_131]
+	at com.mchange.v2.c3p0.DriverManagerDataSource.driver(DriverManagerDataSource.java:223) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:134) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:182) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:171) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:137) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1014) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$800(BasicResourcePool.java:32) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask.run(BasicResourcePool.java:1810) [c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547) [c3p0-0.9.1.2.jar:0.9.1.2]
+
+2017-05-28 10:11:31.645  WARN 9392 --- [com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0] c.m.v.r.BasicResourcePool                : com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@30102b57 -- Acquisition Attempt Failed!!! Clearing pending acquires. While trying to acquire a needed new resource, we failed to succeed more than the maximum number of allowed acquisition attempts (15). Last acquisition attempt exception: 
+
+java.sql.SQLException: No suitable driver
+	at java.sql.DriverManager.getDriver(Unknown Source) ~[?:1.8.0_131]
+	at com.mchange.v2.c3p0.DriverManagerDataSource.driver(DriverManagerDataSource.java:223) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:134) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:182) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:171) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:137) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1014) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$800(BasicResourcePool.java:32) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask.run(BasicResourcePool.java:1810) [c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547) [c3p0-0.9.1.2.jar:0.9.1.2]
+
+2017-05-28 10:11:31.645  WARN 9392 --- [com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1] c.m.v.r.BasicResourcePool                : com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@3365c6eb -- Acquisition Attempt Failed!!! Clearing pending acquires. While trying to acquire a needed new resource, we failed to succeed more than the maximum number of allowed acquisition attempts (15). Last acquisition attempt exception: 
+
+java.sql.SQLException: No suitable driver
+	at java.sql.DriverManager.getDriver(Unknown Source) ~[?:1.8.0_131]
+	at com.mchange.v2.c3p0.DriverManagerDataSource.driver(DriverManagerDataSource.java:223) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:134) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:182) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:171) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:137) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1014) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$800(BasicResourcePool.java:32) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask.run(BasicResourcePool.java:1810) [c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547) [c3p0-0.9.1.2.jar:0.9.1.2]
+
+2017-05-28 10:11:46.685  WARN 9392 --- [com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1] c.m.v.r.BasicResourcePool                : com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@76674ee3 -- Acquisition Attempt Failed!!! Clearing pending acquires. While trying to acquire a needed new resource, we failed to succeed more than the maximum number of allowed acquisition attempts (15). Last acquisition attempt exception: 
+
+java.sql.SQLException: No suitable driver
+	at java.sql.DriverManager.getDriver(Unknown Source) ~[?:1.8.0_131]
+	at com.mchange.v2.c3p0.DriverManagerDataSource.driver(DriverManagerDataSource.java:223) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:134) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:182) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:171) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:137) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1014) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$800(BasicResourcePool.java:32) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask.run(BasicResourcePool.java:1810) [c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547) [c3p0-0.9.1.2.jar:0.9.1.2]
+
+2017-05-28 10:11:46.685  WARN 9392 --- [com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2] c.m.v.r.BasicResourcePool                : com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@10a3f7f7 -- Acquisition Attempt Failed!!! Clearing pending acquires. While trying to acquire a needed new resource, we failed to succeed more than the maximum number of allowed acquisition attempts (15). Last acquisition attempt exception: 
+
+java.sql.SQLException: No suitable driver
+	at java.sql.DriverManager.getDriver(Unknown Source) ~[?:1.8.0_131]
+	at com.mchange.v2.c3p0.DriverManagerDataSource.driver(DriverManagerDataSource.java:223) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:134) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:182) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:171) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:137) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1014) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$800(BasicResourcePool.java:32) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask.run(BasicResourcePool.java:1810) [c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547) [c3p0-0.9.1.2.jar:0.9.1.2]
+
+2017-05-28 10:12:01.760  WARN 9392 --- [com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0] c.m.v.r.BasicResourcePool                : com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@38860b89 -- Acquisition Attempt Failed!!! Clearing pending acquires. While trying to acquire a needed new resource, we failed to succeed more than the maximum number of allowed acquisition attempts (15). Last acquisition attempt exception: 
+
+java.sql.SQLException: No suitable driver
+	at java.sql.DriverManager.getDriver(Unknown Source) ~[?:1.8.0_131]
+	at com.mchange.v2.c3p0.DriverManagerDataSource.driver(DriverManagerDataSource.java:223) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:134) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:182) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:171) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:137) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1014) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$800(BasicResourcePool.java:32) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask.run(BasicResourcePool.java:1810) [c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547) [c3p0-0.9.1.2.jar:0.9.1.2]
+
+2017-05-28 10:12:01.760  WARN 9392 --- [com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2] c.m.v.r.BasicResourcePool                : com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@296278d -- Acquisition Attempt Failed!!! Clearing pending acquires. While trying to acquire a needed new resource, we failed to succeed more than the maximum number of allowed acquisition attempts (15). Last acquisition attempt exception: 
+
+java.sql.SQLException: No suitable driver
+	at java.sql.DriverManager.getDriver(Unknown Source) ~[?:1.8.0_131]
+	at com.mchange.v2.c3p0.DriverManagerDataSource.driver(DriverManagerDataSource.java:223) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:134) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:182) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:171) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:137) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1014) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$800(BasicResourcePool.java:32) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask.run(BasicResourcePool.java:1810) [c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547) [c3p0-0.9.1.2.jar:0.9.1.2]
+
+2017-05-28 10:12:16.824  WARN 9392 --- [com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2] c.m.v.r.BasicResourcePool                : com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@5ab4dcf7 -- Acquisition Attempt Failed!!! Clearing pending acquires. While trying to acquire a needed new resource, we failed to succeed more than the maximum number of allowed acquisition attempts (15). Last acquisition attempt exception: 
+
+java.sql.SQLException: No suitable driver
+	at java.sql.DriverManager.getDriver(Unknown Source) ~[?:1.8.0_131]
+	at com.mchange.v2.c3p0.DriverManagerDataSource.driver(DriverManagerDataSource.java:223) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:134) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:182) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:171) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:137) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1014) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$800(BasicResourcePool.java:32) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask.run(BasicResourcePool.java:1810) [c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547) [c3p0-0.9.1.2.jar:0.9.1.2]
+
+2017-05-28 10:12:16.824  WARN 9392 --- [com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1] c.m.v.r.BasicResourcePool                : com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@22c2c4c1 -- Acquisition Attempt Failed!!! Clearing pending acquires. While trying to acquire a needed new resource, we failed to succeed more than the maximum number of allowed acquisition attempts (15). Last acquisition attempt exception: 
+
+java.sql.SQLException: No suitable driver
+	at java.sql.DriverManager.getDriver(Unknown Source) ~[?:1.8.0_131]
+	at com.mchange.v2.c3p0.DriverManagerDataSource.driver(DriverManagerDataSource.java:223) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:134) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:182) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:171) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:137) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1014) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$800(BasicResourcePool.java:32) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask.run(BasicResourcePool.java:1810) [c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547) [c3p0-0.9.1.2.jar:0.9.1.2]
+
+2017-05-28 10:12:31.838  WARN 9392 --- [com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0] c.m.v.r.BasicResourcePool                : com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@6174f154 -- Acquisition Attempt Failed!!! Clearing pending acquires. While trying to acquire a needed new resource, we failed to succeed more than the maximum number of allowed acquisition attempts (15). Last acquisition attempt exception: 
+
+java.sql.SQLException: No suitable driver
+	at java.sql.DriverManager.getDriver(Unknown Source) ~[?:1.8.0_131]
+	at com.mchange.v2.c3p0.DriverManagerDataSource.driver(DriverManagerDataSource.java:223) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:134) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:182) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:171) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:137) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1014) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$800(BasicResourcePool.java:32) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask.run(BasicResourcePool.java:1810) [c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547) [c3p0-0.9.1.2.jar:0.9.1.2]
+
+2017-05-28 10:12:31.838  WARN 9392 --- [com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1] c.m.v.r.BasicResourcePool                : com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@475b38c5 -- Acquisition Attempt Failed!!! Clearing pending acquires. While trying to acquire a needed new resource, we failed to succeed more than the maximum number of allowed acquisition attempts (15). Last acquisition attempt exception: 
+
+java.sql.SQLException: No suitable driver
+	at java.sql.DriverManager.getDriver(Unknown Source) ~[?:1.8.0_131]
+	at com.mchange.v2.c3p0.DriverManagerDataSource.driver(DriverManagerDataSource.java:223) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:134) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:182) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:171) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:137) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1014) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$800(BasicResourcePool.java:32) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask.run(BasicResourcePool.java:1810) [c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547) [c3p0-0.9.1.2.jar:0.9.1.2]
+
+2017-05-28 10:12:46.904  WARN 9392 --- [com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0] c.m.v.r.BasicResourcePool                : com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@1a2b81c5 -- Acquisition Attempt Failed!!! Clearing pending acquires. While trying to acquire a needed new resource, we failed to succeed more than the maximum number of allowed acquisition attempts (15). Last acquisition attempt exception: 
+
+java.sql.SQLException: No suitable driver
+	at java.sql.DriverManager.getDriver(Unknown Source) ~[?:1.8.0_131]
+	at com.mchange.v2.c3p0.DriverManagerDataSource.driver(DriverManagerDataSource.java:223) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:134) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:182) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:171) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:137) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1014) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$800(BasicResourcePool.java:32) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask.run(BasicResourcePool.java:1810) [c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547) [c3p0-0.9.1.2.jar:0.9.1.2]
+
+2017-05-28 10:12:46.904  WARN 9392 --- [com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2] c.m.v.r.BasicResourcePool                : com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@3d914330 -- Acquisition Attempt Failed!!! Clearing pending acquires. While trying to acquire a needed new resource, we failed to succeed more than the maximum number of allowed acquisition attempts (15). Last acquisition attempt exception: 
+
+java.sql.SQLException: No suitable driver
+	at java.sql.DriverManager.getDriver(Unknown Source) ~[?:1.8.0_131]
+	at com.mchange.v2.c3p0.DriverManagerDataSource.driver(DriverManagerDataSource.java:223) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:134) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:182) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:171) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:137) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1014) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$800(BasicResourcePool.java:32) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask.run(BasicResourcePool.java:1810) [c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547) [c3p0-0.9.1.2.jar:0.9.1.2]
+
+2017-05-28 10:13:02.074  WARN 9392 --- [com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1] c.m.v.r.BasicResourcePool                : com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@5a14ec5b -- Acquisition Attempt Failed!!! Clearing pending acquires. While trying to acquire a needed new resource, we failed to succeed more than the maximum number of allowed acquisition attempts (15). Last acquisition attempt exception: 
+
+java.sql.SQLException: No suitable driver
+	at java.sql.DriverManager.getDriver(Unknown Source) ~[?:1.8.0_131]
+	at com.mchange.v2.c3p0.DriverManagerDataSource.driver(DriverManagerDataSource.java:223) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:134) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:182) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:171) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:137) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1014) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$800(BasicResourcePool.java:32) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask.run(BasicResourcePool.java:1810) [c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547) [c3p0-0.9.1.2.jar:0.9.1.2]
+
+2017-05-28 10:13:02.074  WARN 9392 --- [com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2] c.m.v.r.BasicResourcePool                : com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@3202073a -- Acquisition Attempt Failed!!! Clearing pending acquires. While trying to acquire a needed new resource, we failed to succeed more than the maximum number of allowed acquisition attempts (15). Last acquisition attempt exception: 
+
+java.sql.SQLException: No suitable driver
+	at java.sql.DriverManager.getDriver(Unknown Source) ~[?:1.8.0_131]
+	at com.mchange.v2.c3p0.DriverManagerDataSource.driver(DriverManagerDataSource.java:223) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:134) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:182) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:171) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:137) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1014) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$800(BasicResourcePool.java:32) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask.run(BasicResourcePool.java:1810) [c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547) [c3p0-0.9.1.2.jar:0.9.1.2]
+
+2017-05-28 10:13:17.019  WARN 9392 --- [com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2] c.m.v.r.BasicResourcePool                : com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@19be4b8 -- Acquisition Attempt Failed!!! Clearing pending acquires. While trying to acquire a needed new resource, we failed to succeed more than the maximum number of allowed acquisition attempts (15). Last acquisition attempt exception: 
+
+java.sql.SQLException: No suitable driver
+	at java.sql.DriverManager.getDriver(Unknown Source) ~[?:1.8.0_131]
+	at com.mchange.v2.c3p0.DriverManagerDataSource.driver(DriverManagerDataSource.java:223) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:134) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:182) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:171) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:137) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1014) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$800(BasicResourcePool.java:32) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask.run(BasicResourcePool.java:1810) [c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547) [c3p0-0.9.1.2.jar:0.9.1.2]
+
+2017-05-28 10:13:17.019  WARN 9392 --- [com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0] c.m.v.r.BasicResourcePool                : com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@2b505b44 -- Acquisition Attempt Failed!!! Clearing pending acquires. While trying to acquire a needed new resource, we failed to succeed more than the maximum number of allowed acquisition attempts (15). Last acquisition attempt exception: 
+
+java.sql.SQLException: No suitable driver
+	at java.sql.DriverManager.getDriver(Unknown Source) ~[?:1.8.0_131]
+	at com.mchange.v2.c3p0.DriverManagerDataSource.driver(DriverManagerDataSource.java:223) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:134) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:182) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:171) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:137) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1014) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$800(BasicResourcePool.java:32) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask.run(BasicResourcePool.java:1810) [c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547) [c3p0-0.9.1.2.jar:0.9.1.2]
+
+2017-05-28 10:13:32.025  WARN 9392 --- [com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0] c.m.v.r.BasicResourcePool                : com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@2382c7e4 -- Acquisition Attempt Failed!!! Clearing pending acquires. While trying to acquire a needed new resource, we failed to succeed more than the maximum number of allowed acquisition attempts (15). Last acquisition attempt exception: 
+
+java.sql.SQLException: No suitable driver
+	at java.sql.DriverManager.getDriver(Unknown Source) ~[?:1.8.0_131]
+	at com.mchange.v2.c3p0.DriverManagerDataSource.driver(DriverManagerDataSource.java:223) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:134) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:182) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:171) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:137) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1014) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$800(BasicResourcePool.java:32) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask.run(BasicResourcePool.java:1810) [c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547) [c3p0-0.9.1.2.jar:0.9.1.2]
+
+2017-05-28 10:13:32.025  WARN 9392 --- [com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1] c.m.v.r.BasicResourcePool                : com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@1648b1ac -- Acquisition Attempt Failed!!! Clearing pending acquires. While trying to acquire a needed new resource, we failed to succeed more than the maximum number of allowed acquisition attempts (15). Last acquisition attempt exception: 
+
+java.sql.SQLException: No suitable driver
+	at java.sql.DriverManager.getDriver(Unknown Source) ~[?:1.8.0_131]
+	at com.mchange.v2.c3p0.DriverManagerDataSource.driver(DriverManagerDataSource.java:223) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:134) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:182) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:171) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:137) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1014) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$800(BasicResourcePool.java:32) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask.run(BasicResourcePool.java:1810) [c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547) [c3p0-0.9.1.2.jar:0.9.1.2]
+
+2017-05-28 10:13:47.100  WARN 9392 --- [com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1] c.m.v.r.BasicResourcePool                : com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@22988b68 -- Acquisition Attempt Failed!!! Clearing pending acquires. While trying to acquire a needed new resource, we failed to succeed more than the maximum number of allowed acquisition attempts (15). Last acquisition attempt exception: 
+
+java.sql.SQLException: No suitable driver
+	at java.sql.DriverManager.getDriver(Unknown Source) ~[?:1.8.0_131]
+	at com.mchange.v2.c3p0.DriverManagerDataSource.driver(DriverManagerDataSource.java:223) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:134) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:182) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:171) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:137) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1014) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$800(BasicResourcePool.java:32) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask.run(BasicResourcePool.java:1810) [c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547) [c3p0-0.9.1.2.jar:0.9.1.2]
+
+2017-05-28 10:13:47.100  WARN 9392 --- [com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2] c.m.v.r.BasicResourcePool                : com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@7d34d318 -- Acquisition Attempt Failed!!! Clearing pending acquires. While trying to acquire a needed new resource, we failed to succeed more than the maximum number of allowed acquisition attempts (15). Last acquisition attempt exception: 
+
+java.sql.SQLException: No suitable driver
+	at java.sql.DriverManager.getDriver(Unknown Source) ~[?:1.8.0_131]
+	at com.mchange.v2.c3p0.DriverManagerDataSource.driver(DriverManagerDataSource.java:223) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:134) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:182) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:171) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:137) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1014) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$800(BasicResourcePool.java:32) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask.run(BasicResourcePool.java:1810) [c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547) [c3p0-0.9.1.2.jar:0.9.1.2]
+
+2017-05-28 10:14:02.211  WARN 9392 --- [com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1] c.m.v.r.BasicResourcePool                : com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@3c1b12ee -- Acquisition Attempt Failed!!! Clearing pending acquires. While trying to acquire a needed new resource, we failed to succeed more than the maximum number of allowed acquisition attempts (15). Last acquisition attempt exception: 
+
+java.sql.SQLException: No suitable driver
+	at java.sql.DriverManager.getDriver(Unknown Source) ~[?:1.8.0_131]
+	at com.mchange.v2.c3p0.DriverManagerDataSource.driver(DriverManagerDataSource.java:223) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:134) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:182) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:171) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:137) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1014) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$800(BasicResourcePool.java:32) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask.run(BasicResourcePool.java:1810) [c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547) [c3p0-0.9.1.2.jar:0.9.1.2]
+
+2017-05-28 10:14:02.211  WARN 9392 --- [com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0] c.m.v.r.BasicResourcePool                : com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@653a6c91 -- Acquisition Attempt Failed!!! Clearing pending acquires. While trying to acquire a needed new resource, we failed to succeed more than the maximum number of allowed acquisition attempts (15). Last acquisition attempt exception: 
+
+java.sql.SQLException: No suitable driver
+	at java.sql.DriverManager.getDriver(Unknown Source) ~[?:1.8.0_131]
+	at com.mchange.v2.c3p0.DriverManagerDataSource.driver(DriverManagerDataSource.java:223) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:134) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:182) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:171) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:137) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1014) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$800(BasicResourcePool.java:32) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask.run(BasicResourcePool.java:1810) [c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547) [c3p0-0.9.1.2.jar:0.9.1.2]
+
+2017-05-28 10:14:17.271  WARN 9392 --- [com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0] c.m.v.r.BasicResourcePool                : com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@2359ec5a -- Acquisition Attempt Failed!!! Clearing pending acquires. While trying to acquire a needed new resource, we failed to succeed more than the maximum number of allowed acquisition attempts (15). Last acquisition attempt exception: 
+
+java.sql.SQLException: No suitable driver
+	at java.sql.DriverManager.getDriver(Unknown Source) ~[?:1.8.0_131]
+	at com.mchange.v2.c3p0.DriverManagerDataSource.driver(DriverManagerDataSource.java:223) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:134) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:182) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:171) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:137) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1014) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$800(BasicResourcePool.java:32) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask.run(BasicResourcePool.java:1810) [c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547) [c3p0-0.9.1.2.jar:0.9.1.2]
+
+2017-05-28 10:14:17.271  WARN 9392 --- [com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2] c.m.v.r.BasicResourcePool                : com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@4a8b874d -- Acquisition Attempt Failed!!! Clearing pending acquires. While trying to acquire a needed new resource, we failed to succeed more than the maximum number of allowed acquisition attempts (15). Last acquisition attempt exception: 
+
+java.sql.SQLException: No suitable driver
+	at java.sql.DriverManager.getDriver(Unknown Source) ~[?:1.8.0_131]
+	at com.mchange.v2.c3p0.DriverManagerDataSource.driver(DriverManagerDataSource.java:223) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:134) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:182) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:171) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:137) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1014) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$800(BasicResourcePool.java:32) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask.run(BasicResourcePool.java:1810) [c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547) [c3p0-0.9.1.2.jar:0.9.1.2]
+
+2017-05-28 10:14:32.334  WARN 9392 --- [com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1] c.m.v.r.BasicResourcePool                : com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@41104702 -- Acquisition Attempt Failed!!! Clearing pending acquires. While trying to acquire a needed new resource, we failed to succeed more than the maximum number of allowed acquisition attempts (15). Last acquisition attempt exception: 
+
+java.sql.SQLException: No suitable driver
+	at java.sql.DriverManager.getDriver(Unknown Source) ~[?:1.8.0_131]
+	at com.mchange.v2.c3p0.DriverManagerDataSource.driver(DriverManagerDataSource.java:223) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:134) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:182) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:171) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:137) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1014) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$800(BasicResourcePool.java:32) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask.run(BasicResourcePool.java:1810) [c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547) [c3p0-0.9.1.2.jar:0.9.1.2]
+
+2017-05-28 10:14:32.334  WARN 9392 --- [com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2] c.m.v.r.BasicResourcePool                : com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@689272f1 -- Acquisition Attempt Failed!!! Clearing pending acquires. While trying to acquire a needed new resource, we failed to succeed more than the maximum number of allowed acquisition attempts (15). Last acquisition attempt exception: 
+
+java.sql.SQLException: No suitable driver
+	at java.sql.DriverManager.getDriver(Unknown Source) ~[?:1.8.0_131]
+	at com.mchange.v2.c3p0.DriverManagerDataSource.driver(DriverManagerDataSource.java:223) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:134) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:182) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:171) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:137) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1014) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$800(BasicResourcePool.java:32) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask.run(BasicResourcePool.java:1810) [c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547) [c3p0-0.9.1.2.jar:0.9.1.2]
+
+2017-05-28 10:14:47.361  WARN 9392 --- [com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2] c.m.v.r.BasicResourcePool                : com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@36f2f57f -- Acquisition Attempt Failed!!! Clearing pending acquires. While trying to acquire a needed new resource, we failed to succeed more than the maximum number of allowed acquisition attempts (15). Last acquisition attempt exception: 
+
+java.sql.SQLException: No suitable driver
+	at java.sql.DriverManager.getDriver(Unknown Source) ~[?:1.8.0_131]
+	at com.mchange.v2.c3p0.DriverManagerDataSource.driver(DriverManagerDataSource.java:223) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:134) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:182) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:171) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:137) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1014) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$800(BasicResourcePool.java:32) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask.run(BasicResourcePool.java:1810) [c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547) [c3p0-0.9.1.2.jar:0.9.1.2]
+
+2017-05-28 10:14:47.361  WARN 9392 --- [com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0] c.m.v.r.BasicResourcePool                : com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@a7a190e -- Acquisition Attempt Failed!!! Clearing pending acquires. While trying to acquire a needed new resource, we failed to succeed more than the maximum number of allowed acquisition attempts (15). Last acquisition attempt exception: 
+
+java.sql.SQLException: No suitable driver
+	at java.sql.DriverManager.getDriver(Unknown Source) ~[?:1.8.0_131]
+	at com.mchange.v2.c3p0.DriverManagerDataSource.driver(DriverManagerDataSource.java:223) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:134) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:182) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:171) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:137) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1014) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$800(BasicResourcePool.java:32) ~[c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask.run(BasicResourcePool.java:1810) [c3p0-0.9.1.2.jar:0.9.1.2]
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547) [c3p0-0.9.1.2.jar:0.9.1.2]
+
