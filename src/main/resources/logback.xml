@@ -1,9 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration>
-    <include resource="org/springframework/boot/logging/logback/defaults.xml" />
-    <property name="LOG_FILE" value="${LOG_FILE:-${LOG_PATH:-${LOG_TEMP:-${java.io.tmpdir:-/tmp}}/}spring.log}"/>
-    <include resource="org/springframework/boot/logging/logback/file-appender.xml" />
-    <root level="INFO">
-        <appender-ref ref="FILE" />
-    </root>
+
+  <appender name="console" class="ch.qos.logback.core.ConsoleAppender">
+    <!-- encoders are assigned the type
+         ch.qos.logback.classic.encoder.PatternLayoutEncoder by default -->
+    <encoder>
+      <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+    </encoder>
+  </appender>
+  
+  <appender name="file" class="ch.qos.logback.core.rolling.RollingFileAppender">
+    <file>${catalina.home}/logs/@project.artifactId@.log</file>
+    <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+      <!-- daily rollover -->
+      <fileNamePattern>@project.artifactId@.%d{yyyy-MM-dd}.log</fileNamePattern>
+
+      <!-- keep 30 days' worth of history -->
+      <maxHistory>30</maxHistory>
+    </rollingPolicy>
+
+    <encoder>
+      <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{35} - %msg%n</pattern>
+    </encoder>
+  </appender>
+
+  <logger name="com.sun.faces.context.flash.ELFlash" level="ERROR"/>
+  <logger name="javax.enterprise.resource.webcontainer.jsf.flash" level="OFF"/>
+  <logger name="com.sun.faces.application.view.ViewScopeManager" level="ERROR"/>
+	
+  <root level="@logger.level@">
+    <appender-ref ref="@logger.appender@" />
+  </root>
 </configuration>
