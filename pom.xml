@@ -15,11 +15,11 @@
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.compiler.target>1.8</maven.compiler.target>
-		
+
 		<modulo.id>1</modulo.id>
 		<modulo.nome>${project.name}</modulo.nome>
 		<modulo.versao>${project.version}</modulo.versao>
-		
+
 	</properties>
 	<dependencyManagement />
 	<dependencies>
@@ -114,7 +114,7 @@
 			<scope>compile</scope>
 		</dependency>
 	</dependencies>
-	
+
 	<repositories>
 		<repository>
 			<id>spring-snapshots</id>
@@ -135,7 +135,7 @@
 			<url>http://repo.spring.io/milestone</url>
 		</pluginRepository>
 	</pluginRepositories>
-	
+
 	<build>
 		<finalName>${project.artifactId}</finalName>
 		<resources>
@@ -163,7 +163,7 @@
 				</excludes>
 			</resource>
 		</resources>
-		
+
 		<testResources>
 			<testResource>
 				<directory>src/test/resources</directory>
@@ -184,7 +184,7 @@
 				</includes>
 			</testResource>
 		</testResources>
-		
+
 		<plugins>
 			<plugin>
 				<artifactId>maven-war-plugin</artifactId>
@@ -197,7 +197,7 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 		</plugins>
-		
+
 		<pluginManagement>
 			<plugins>
 				<plugin>
@@ -225,13 +225,17 @@
 					<version>2.4</version>
 					<configuration>
 						<archetypeFilteredExtentions>java</archetypeFilteredExtentions>
+						<delimiters>
+							<delimiter>@</delimiter>
+						</delimiters>
+						<useDefaultDelimiters>false</useDefaultDelimiters>
 					</configuration>
 				</plugin>
 			</plugins>
 		</pluginManagement>
-		
+
 	</build>
-	
+
 	<profiles>
 		<profile>
 			<activation>
@@ -254,11 +258,9 @@
 				<conf.pathFiles2>C:\\temp\\</conf.pathFiles2>
 			</properties>
 		</profile>
-		
+
 		<profile>
-			<!-- <activation>
-				<activeByDefault>true</activeByDefault>
-			</activation> -->
+			<!-- <activation> <activeByDefault>true</activeByDefault> </activation> -->
 			<id>DESENVOLVIMENTO-SED</id>
 			<properties>
 				<activeProfile>DESENVOLVIMENTO</activeProfile>
