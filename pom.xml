@@ -76,6 +76,16 @@
 			<artifactId>spring-boot-starter-security</artifactId>
 		</dependency>
 		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-thymeleaf</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-devtools</artifactId>
+		</dependency>
+
+
+		<dependency>
 			<groupId>javax.servlet.jsp.jstl</groupId>
 			<artifactId>jstl-api</artifactId>
 			<version>1.2</version>
@@ -238,9 +248,7 @@
 
 	<profiles>
 		<profile>
-			<activation>
-				<activeByDefault>true</activeByDefault>
-			</activation>
+			<!--<activation> <activeByDefault>true</activeByDefault> </activation> -->
 			<id>DESENVOLVIMENTO</id>
 			<properties>
 				<activeProfile>DESENVOLVIMENTO</activeProfile>
@@ -260,7 +268,9 @@
 		</profile>
 
 		<profile>
-			<!-- <activation> <activeByDefault>true</activeByDefault> </activation> -->
+			<activation>
+				<activeByDefault>true</activeByDefault>
+			</activation>
 			<id>DESENVOLVIMENTO-SED</id>
 			<properties>
 				<activeProfile>DESENVOLVIMENTO</activeProfile>
