@@ -83,7 +83,10 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>
 		</dependency>
-
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-actuator</artifactId>
+		</dependency>
 
 		<dependency>
 			<groupId>javax.servlet.jsp.jstl</groupId>
@@ -232,7 +235,6 @@
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-archetype-plugin</artifactId>
-					<version>2.4</version>
 					<configuration>
 						<archetypeFilteredExtentions>java</archetypeFilteredExtentions>
 						<delimiters>
@@ -248,7 +250,9 @@
 
 	<profiles>
 		<profile>
-			<!--<activation> <activeByDefault>true</activeByDefault> </activation> -->
+			<activation>
+				<activeByDefault>true</activeByDefault>
+			</activation>
 			<id>DESENVOLVIMENTO</id>
 			<properties>
 				<activeProfile>DESENVOLVIMENTO</activeProfile>
@@ -268,9 +272,7 @@
 		</profile>
 
 		<profile>
-			<activation>
-				<activeByDefault>true</activeByDefault>
-			</activation>
+			<!-- <activation> <activeByDefault>true</activeByDefault> </activation> -->
 			<id>DESENVOLVIMENTO-SED</id>
 			<properties>
 				<activeProfile>DESENVOLVIMENTO</activeProfile>
