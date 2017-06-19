@@ -250,9 +250,9 @@
 
 	<profiles>
 		<profile>
-			<activation>
+			<!-- <activation>
 				<activeByDefault>true</activeByDefault>
-			</activation>
+			</activation> -->
 			<id>DESENVOLVIMENTO</id>
 			<properties>
 				<activeProfile>DESENVOLVIMENTO</activeProfile>
@@ -272,7 +272,9 @@
 		</profile>
 
 		<profile>
-			<!-- <activation> <activeByDefault>true</activeByDefault> </activation> -->
+			<activation> 
+				<activeByDefault>true</activeByDefault> 
+			</activation>
 			<id>DESENVOLVIMENTO-SED</id>
 			<properties>
 				<activeProfile>DESENVOLVIMENTO</activeProfile>

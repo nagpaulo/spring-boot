@@ -1,6 +1,5 @@
 package br.com.project.webservice.config;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.context.annotation.Bean;
@@ -23,7 +22,6 @@ import org.thymeleaf.templateresolver.ServletContextTemplateResolver;
 @PropertySource("classpath:project.properties")
 @EnableGlobalMethodSecurity(securedEnabled = true , jsr250Enabled = true, proxyTargetClass = true)//Needs to be here or will not work for the controllers
 public class SpringWebConfig extends WebMvcConfigurerAdapter{
-private List<String> allowedOrigins = new ArrayList<>();
 	
 	@Override
 	public void addResourceHandlers(ResourceHandlerRegistry registry) {
@@ -55,15 +53,10 @@ private List<String> allowedOrigins = new ArrayList<>();
 	}
 
 	@Override
-	public void addCorsMappings(CorsRegistry registry) {		
-		/*allowedOrigins.add("http://alunoonline.seduc.ce.gov.br");
-		allowedOrigins.add("http://aluno.seduc.ce.gov.br");
-		allowedOrigins.add("http://bolsapaic.seduc.ce.gov.br");	*/
-		allowedOrigins.add("http://localhost:3000");
-		
-		registry.addMapping("/**")
-		.allowedOrigins(allowedOrigins.toArray(new String[allowedOrigins.size()]));
+	public void addCorsMappings(CorsRegistry registry) {
+		registry.addMapping("/**");
 	}
+	
 	
 	@Override
 	public void configureMessageConverters(List<HttpMessageConverter<?>> converters) {		
