@@ -50,13 +50,7 @@ public class SpringWebConfig extends WebMvcConfigurerAdapter{
 	MappingJackson2HttpMessageConverter converter() {
 		MappingJackson2HttpMessageConverter converter = new MappingJackson2HttpMessageConverter();
 		return converter;
-	}
-
-	@Override
-	public void addCorsMappings(CorsRegistry registry) {
-		registry.addMapping("/**");
-	}
-	
+	}	
 	
 	@Override
 	public void configureMessageConverters(List<HttpMessageConverter<?>> converters) {		
