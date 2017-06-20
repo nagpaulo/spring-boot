@@ -64,7 +64,7 @@ public class UserDetailsServiceImpl implements UserDetailsService{
     	Long moduloId = Long.parseLong(resource.getString("modulo.id"));
     	Modulo modulo = moduloRepository.findOne(moduloId);
     	
-    	if(!user.getUsuarioGrupo().isEmpty()){
+    	if(user!= null && user.getUsuarioGrupo()!= null && !user.getUsuarioGrupo().isEmpty()){
     		grantedAuthorities.add(new SimpleGrantedAuthority("ROLE_USER_AUTH"));
 	    	for (Grupo grupo : user.getUsuarioGrupo()) {
 	    		if(grupo.getModulo().getId() == moduloId){
@@ -94,7 +94,8 @@ public class UserDetailsServiceImpl implements UserDetailsService{
 	    	
 	    	return userDetails;
     	}else{
-    		 return new org.springframework.security.core.userdetails.User(user.getLogin(), user.getSenha(), false, false, false, false, grantedAuthorities);
+    		UserDetails userDetails= null;
+    		return userDetails;
     	}
 
     }
@@ -104,7 +105,6 @@ public class UserDetailsServiceImpl implements UserDetailsService{
     	String ip = requestServlet.getRemoteAddr();
     	
 		if(usuarioAcesso == null){
-			//usuarioAcesso = listAcessUser.get(0);
 			usuarioAcesso = new UsuarioAcesso();
 			usuarioAcesso.setModulo(modulo);
 			usuarioAcesso.setUsuario(user);
