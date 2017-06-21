@@ -4,6 +4,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.AuthenticationManager;
+import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -33,17 +34,26 @@ public class SecurityServiceImpl implements SecurityService {
 
 	@Override
 	public void autologin(String username, String password) {
-		UserDetails userDetails = userDetailsService.loadUserByUsername(username);
+		UserDetails userDetails = null;
+		
+		userDetails = userDetailsService.loadUserByUsername(username);
 		if(userDetails != null){
 			UsernamePasswordAuthenticationToken usernamePasswordAuthenticationToken = new UsernamePasswordAuthenticationToken(
 					userDetails, password, userDetails.getAuthorities());
-	
-			authenticationManager.authenticate(usernamePasswordAuthenticationToken);
-	
-			if (usernamePasswordAuthenticationToken.isAuthenticated()) {
+			
+			try {
+				authenticationManager.authenticate(usernamePasswordAuthenticationToken);
+				
+				if (usernamePasswordAuthenticationToken.isAuthenticated()) {
+					SecurityContextHolder.getContext().setAuthentication(usernamePasswordAuthenticationToken);
+					logger.debug(String.format("Auto login %s successfully!", username));
+				}
+			} catch (BadCredentialsException e) {
+				System.out.println("Erro: "+e);
+				usernamePasswordAuthenticationToken.setAuthenticated(false);
 				SecurityContextHolder.getContext().setAuthentication(usernamePasswordAuthenticationToken);
-				logger.debug(String.format("Auto login %s successfully!", username));
-			}
+				logger.debug(String.format("Senha Inválida!", username));
+			}		
 		}
 	}
 

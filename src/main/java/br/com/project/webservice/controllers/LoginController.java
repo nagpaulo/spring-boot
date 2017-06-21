@@ -1,8 +1,5 @@
 package br.com.project.webservice.controllers;
 
-import java.text.DateFormat;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
 import java.util.Date;
 
 import javax.servlet.http.HttpServletRequest;
@@ -12,6 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.core.context.SecurityContext;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -43,9 +41,10 @@ public class LoginController {
 		securityServiceImpl.autologin(username, password);
 		HttpHeaders headers = new HttpHeaders();
 		HttpSession session = requestServlet.getSession(true);
-		session.getAttribute("SPRING_SECURITY_CONTEXT");
 		
-		if(session.getAttribute("SPRING_SECURITY_CONTEXT") != null){
+		SecurityContext securityContext = (SecurityContext) session.getAttribute("SPRING_SECURITY_CONTEXT");
+		
+		if(securityContext != null && securityContext.getAuthentication().isAuthenticated()){
 			Usuario user = (Usuario) session.getAttribute("SECURITY_USER");
 			headers.add("session.user", user.getUsuario());
 			return new ResponseEntity<String>(headers, HttpStatus.CREATED);

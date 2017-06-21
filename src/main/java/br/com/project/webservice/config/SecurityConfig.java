@@ -33,7 +33,7 @@ import br.com.project.webservice.auth.repository.UsuarioRepository;
 
 @Configuration
 @EnableWebSecurity
-@EnableGlobalMethodSecurity(prePostEnabled = true)
+@EnableGlobalMethodSecurity(securedEnabled = true, prePostEnabled = true)
 public class SecurityConfig extends WebSecurityConfigurerAdapter{
 
 	@Bean(name = BeanIds.AUTHENTICATION_MANAGER)

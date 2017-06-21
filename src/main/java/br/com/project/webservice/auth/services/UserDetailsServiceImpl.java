@@ -101,6 +101,7 @@ public class UserDetailsServiceImpl implements UserDetailsService{
     }
     
     public void GravarAcesso(Usuario user, Modulo modulo, UserDetails userDetails){
+    	HttpSession session = requestServlet.getSession(false);
     	UsuarioAcesso usuarioAcesso = usuarioAcessoRepository.findByUsuarioAndModulo(user, modulo);
     	String ip = requestServlet.getRemoteAddr();
     	
@@ -127,7 +128,7 @@ public class UserDetailsServiceImpl implements UserDetailsService{
 			String ultimoAcesso = dtHora.format(usuarioAcesso.getDataInicio());
 			
 			// Create a new session and add the security context.
-		    HttpSession session = requestServlet.getSession(true);
+		    session = requestServlet.getSession(true);
 		    session.setAttribute("SPRING_SECURITY_CONTEXT", securityContext);
 		    session.setAttribute("SECURITY_USER", user);
 		    session.setAttribute("SECURITY_USER_ACCESS", usuarioAcesso);
