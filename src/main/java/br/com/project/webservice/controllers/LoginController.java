@@ -46,8 +46,10 @@ public class LoginController {
 		
 		if(securityContext != null && securityContext.getAuthentication().isAuthenticated()){
 			Usuario user = (Usuario) session.getAttribute("SECURITY_USER");
-			headers.add("session.user", user.getUsuario());
-			return new ResponseEntity<String>(headers, HttpStatus.CREATED);
+			headers.add("session.user", user.getUsuario());		
+			return new ResponseEntity<String>(headers, HttpStatus.OK);
+		}else if(!securityContext.getAuthentication().isAuthenticated()){
+			return new ResponseEntity<String>(headers, HttpStatus.UNAUTHORIZED);
 		}
 		
 		return new ResponseEntity<String>(headers, HttpStatus.NOT_FOUND);

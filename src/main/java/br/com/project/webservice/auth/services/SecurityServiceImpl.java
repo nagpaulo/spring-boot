@@ -48,7 +48,6 @@ public class SecurityServiceImpl implements SecurityService {
 					logger.debug(String.format("Auto login %s successfully!", username));
 				}
 			} catch (BadCredentialsException e) {
-				System.out.println("Erro: "+e);
 				usernamePasswordAuthenticationToken.setAuthenticated(false);
 				SecurityContextHolder.getContext().setAuthentication(usernamePasswordAuthenticationToken);
 				logger.debug(String.format("Senha Inválida!", username));
