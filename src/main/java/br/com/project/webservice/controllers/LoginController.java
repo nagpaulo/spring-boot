@@ -55,6 +55,15 @@ public class LoginController {
 		return new ResponseEntity<String>(headers, HttpStatus.NOT_FOUND);
 	}
 	
+	@RequestMapping(value = "/esqueceusenha", method = RequestMethod.POST)
+    public String esqueceusenha(@RequestParam("username") String username, 
+    								@RequestParam("cpf") String cpf,
+    								@RequestParam("email") String email) 
+	{
+		
+        return null;
+    }
+	
 	@RequestMapping(value = "/registration", method = RequestMethod.POST)
 	public ResponseEntity<?> registration(){
 		Usuario userForm = new Usuario();
