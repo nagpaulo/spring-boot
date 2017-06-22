@@ -60,6 +60,7 @@ public class LoginController {
     								@RequestParam("cpf") String cpf,
     								@RequestParam("email") String email) 
 	{
+		System.out.println("Teste");
 		
         return null;
     }
