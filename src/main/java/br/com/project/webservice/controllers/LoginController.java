@@ -19,6 +19,7 @@ import org.springframework.web.bind.annotation.RestController;
 import br.com.project.webservice.auth.model.Usuario;
 import br.com.project.webservice.auth.repository.UsuarioRepository;
 import br.com.project.webservice.auth.services.SecurityServiceImpl;
+import br.com.project.webservice.entity.Autores;
 
 @RestController
 @RequestMapping("/authentication")
@@ -36,8 +37,8 @@ public class LoginController {
 	@Autowired
     private BCryptPasswordEncoder bCryptPasswordEncoder;
 	
-	@RequestMapping(value = "/loginin", method = RequestMethod.POST)
-	public ResponseEntity<?> acesso(@RequestParam("username") String username, @RequestParam("password") String password){
+	@RequestMapping(value = "/loginin", method = RequestMethod.POST, produces="application/json")
+	public ResponseEntity<Autores> acesso(@RequestParam("username") String username, @RequestParam("password") String password){
 		securityServiceImpl.autologin(username, password);
 		HttpHeaders headers = new HttpHeaders();
 		HttpSession session = requestServlet.getSession(true);
@@ -47,12 +48,11 @@ public class LoginController {
 		if(securityContext != null && securityContext.getAuthentication().isAuthenticated()){
 			Usuario user = (Usuario) session.getAttribute("SECURITY_USER");
 			headers.add("session.user", user.getUsuario());		
-			return new ResponseEntity<String>(headers, HttpStatus.OK);
+			return new ResponseEntity<Autores>(new Autores(), headers, HttpStatus.OK);
 		}else if(!securityContext.getAuthentication().isAuthenticated()){
-			return new ResponseEntity<String>(headers, HttpStatus.UNAUTHORIZED);
+			return new ResponseEntity<Autores>(headers, HttpStatus.UNAUTHORIZED);
 		}
-		
-		return new ResponseEntity<String>(headers, HttpStatus.NOT_FOUND);
+		return new ResponseEntity<Autores>(headers, HttpStatus.NOT_FOUND);
 	}
 	
 	@RequestMapping(value = "/esqueceusenha", method = RequestMethod.POST)
