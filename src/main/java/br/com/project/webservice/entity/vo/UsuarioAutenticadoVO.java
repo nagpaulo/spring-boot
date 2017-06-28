@@ -10,7 +10,6 @@ public class UsuarioAutenticadoVO {
 	private Usuario usuario;
 	private Set<GrantedAuthority> grantedAuthorities;
 	private String lastAcess;
-	
 	public Usuario getUsuario() {
 		return usuario;
 	}

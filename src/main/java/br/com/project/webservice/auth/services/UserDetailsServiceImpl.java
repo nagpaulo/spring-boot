@@ -129,6 +129,7 @@ public class UserDetailsServiceImpl implements UserDetailsService{
 			
 			// Create a new session and add the security context.
 		    session = requestServlet.getSession(true);
+		    session.setAttribute("SPRING_SECURITY_USERDATAIL", userDetails);
 		    session.setAttribute("SPRING_SECURITY_CONTEXT", securityContext);
 		    session.setAttribute("SECURITY_USER", user);
 		    session.setAttribute("SECURITY_USER_ACCESS", usuarioAcesso);
