@@ -10,6 +10,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.mail.SimpleMailMessage;
+import org.springframework.mail.javamail.JavaMailSender;
+import org.springframework.mail.javamail.JavaMailSenderImpl;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.context.SecurityContext;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -40,7 +43,9 @@ public class LoginController {
 	@Autowired
     private BCryptPasswordEncoder bCryptPasswordEncoder;
 	
-	@SuppressWarnings("unchecked")
+	 @Autowired
+	 public JavaMailSenderImpl emailSender;
+	
 	@RequestMapping(value = "/loginin", method = RequestMethod.POST, produces="application/json")
 	public ResponseEntity<UsuarioAutenticadoVO> acesso(@RequestParam("username") String username, @RequestParam("password") String password){
 		securityServiceImpl.autologin(username, password);
@@ -66,12 +71,20 @@ public class LoginController {
 		return new ResponseEntity<UsuarioAutenticadoVO>(headers, HttpStatus.NOT_FOUND);
 	}
 	
-	@RequestMapping(value = "/esqueceusenha", method = RequestMethod.POST)
+	@RequestMapping(value = "/esqueceusenha", method = RequestMethod.POST, produces="application/json")
     public String esqueceusenha(@RequestParam("username") String username, 
     								@RequestParam("cpf") String cpf,
     								@RequestParam("email") String email) 
 	{
-		System.out.println("Teste");
+		
+		Usuario user = usuarioRepository.findByLogin(username);
+		if(user.getCpf().equals(cpf) && user.getEmail().equals(email)){
+			SimpleMailMessage message = new SimpleMailMessage(); 
+	        message.setTo(email); 
+	        message.setSubject("Reenvio de Senha "+username); 
+	        message.setText("Teste");
+	        emailSender.send(message);
+		}
 		
         return null;
     }
