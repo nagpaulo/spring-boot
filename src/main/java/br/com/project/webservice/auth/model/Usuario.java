@@ -17,6 +17,8 @@ import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 /**
  *
  * @author Paulo Roberto
@@ -36,6 +38,7 @@ public class Usuario implements Serializable {
 	private String usuario;
 	@Column(name = "nm_login")
 	private String login;
+	@JsonIgnore
 	@Column(name = "nm_senha")
 	private String senha;
 	@Column(name = "ds_email")

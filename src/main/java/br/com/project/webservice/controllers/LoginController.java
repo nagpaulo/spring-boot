@@ -20,6 +20,7 @@ import br.com.project.webservice.auth.model.Usuario;
 import br.com.project.webservice.auth.repository.UsuarioRepository;
 import br.com.project.webservice.auth.services.SecurityServiceImpl;
 import br.com.project.webservice.entity.Autores;
+import br.com.project.webservice.entity.vo.UsuarioAutenticadoVO;
 
 @RestController
 @RequestMapping("/authentication")
@@ -38,7 +39,7 @@ public class LoginController {
     private BCryptPasswordEncoder bCryptPasswordEncoder;
 	
 	@RequestMapping(value = "/loginin", method = RequestMethod.POST, produces="application/json")
-	public ResponseEntity<Autores> acesso(@RequestParam("username") String username, @RequestParam("password") String password){
+	public ResponseEntity<UsuarioAutenticadoVO> acesso(@RequestParam("username") String username, @RequestParam("password") String password){
 		securityServiceImpl.autologin(username, password);
 		HttpHeaders headers = new HttpHeaders();
 		HttpSession session = requestServlet.getSession(true);
@@ -47,12 +48,15 @@ public class LoginController {
 		
 		if(securityContext != null && securityContext.getAuthentication().isAuthenticated()){
 			Usuario user = (Usuario) session.getAttribute("SECURITY_USER");
-			headers.add("session.user", user.getUsuario());		
-			return new ResponseEntity<Autores>(new Autores(), headers, HttpStatus.OK);
+			String ultimoAcesso = session.getAttribute("SECURITY_LAST_ACCESS").toString();
+			UsuarioAutenticadoVO usuarioAutenticadoVO = new UsuarioAutenticadoVO();
+			usuarioAutenticadoVO.setUsuario(user);
+			usuarioAutenticadoVO.setLastAcess(ultimoAcesso);
+			return new ResponseEntity<UsuarioAutenticadoVO>(usuarioAutenticadoVO, headers, HttpStatus.OK);
 		}else if(!securityContext.getAuthentication().isAuthenticated()){
-			return new ResponseEntity<Autores>(headers, HttpStatus.UNAUTHORIZED);
+			return new ResponseEntity<UsuarioAutenticadoVO>(headers, HttpStatus.UNAUTHORIZED);
 		}
-		return new ResponseEntity<Autores>(headers, HttpStatus.NOT_FOUND);
+		return new ResponseEntity<UsuarioAutenticadoVO>(headers, HttpStatus.NOT_FOUND);
 	}
 	
 	@RequestMapping(value = "/esqueceusenha", method = RequestMethod.POST)
