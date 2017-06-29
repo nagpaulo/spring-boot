@@ -27,6 +27,7 @@ import br.com.project.webservice.auth.repository.UsuarioRepository;
 import br.com.project.webservice.auth.services.EmailService;
 import br.com.project.webservice.auth.services.SecurityServiceImpl;
 import br.com.project.webservice.entity.vo.UsuarioAutenticadoVO;
+import br.com.project.webservice.entity.vo.UsuarioReenvioSenhaVO;
 
 @RestController
 @RequestMapping("/authentication")
@@ -47,6 +48,7 @@ public class LoginController {
 	@Autowired
 	private EmailService emailService;
 	
+	@SuppressWarnings("unchecked")
 	@RequestMapping(value = "/loginin", method = RequestMethod.POST, produces="application/json")
 	public ResponseEntity<UsuarioAutenticadoVO> acesso(@RequestParam("username") String username, @RequestParam("password") String password){
 		securityServiceImpl.autologin(username, password);
@@ -72,29 +74,46 @@ public class LoginController {
 		return new ResponseEntity<UsuarioAutenticadoVO>(headers, HttpStatus.NOT_FOUND);
 	}
 	
+	@SuppressWarnings("unchecked")
 	@RequestMapping(value = "/esqueceusenha", method = RequestMethod.POST, produces="application/json")
-    public String esqueceusenha(@RequestParam("username") String username, 
+    public ResponseEntity<UsuarioReenvioSenhaVO> esqueceusenha(@RequestParam("username") String username, 
     								@RequestParam("cpf") String cpf,
     								@RequestParam("email") String email) 
 	{
-		
+		HttpHeaders headers = new HttpHeaders();
+		UsuarioReenvioSenhaVO userSend = new UsuarioReenvioSenhaVO();
 		Usuario user = usuarioRepository.findByLogin(username);
-		if(user.getCpf().equals(cpf) && user.getEmail().equals(email)){
-			Map<String, String> params = new HashedMap();
-			params.put("usuario", user.getUsuario());
-			params.put("senha", user.getSenha());
-			Email emailTemplate = new Email();
-			emailTemplate.setRemetente("Pronatec");
-			emailTemplate.addDestinatario(email);
-			emailTemplate.setAssunto("Reenvio de Senha");
-			emailTemplate.setHtml(true);
-			emailTemplate.setUsingTemplate(true);
-			emailTemplate.setTemplate("nova_senha_html.vm");
-			emailTemplate.setParametros(params);
-	        emailService.enviar(emailTemplate);
+		if(user != null){
+			if(user.getCpf().equals(cpf) && user.getEmail().equals(email)){
+				Map<String, String> params = new HashedMap();
+				params.put("usuario", user.getUsuario());
+				params.put("senha", user.getSenha());
+				Email emailTemplate = new Email();
+				emailTemplate.setRemetente("Pronatec");
+				emailTemplate.addDestinatario(email);
+				emailTemplate.setAssunto("Reenvio de Senha");
+				emailTemplate.setHtml(true);
+				emailTemplate.setUsingTemplate(true);
+				emailTemplate.setTemplate("nova_senha_html.vm");
+				emailTemplate.setParametros(params);
+		        emailService.enviar(emailTemplate);
+		        
+		        userSend.setUsuario(user);
+		        userSend.setMessagem("Email enviado com sucesso.");
+		        userSend.setSendMail(true);
+		        return new ResponseEntity<UsuarioReenvioSenhaVO>(userSend, headers, HttpStatus.OK);
+			}else{
+				userSend.setUsuario(null);
+		        userSend.setMessagem("Email não enviado. Verifique se os campos estão correto.");
+		        userSend.setSendMail(false);
+				return new ResponseEntity<UsuarioReenvioSenhaVO>(userSend, headers, HttpStatus.CONFLICT);
+			}
 		}
 		
-        return null;
+		userSend.setUsuario(null);
+        userSend.setMessagem("Email não enviado. Usuario não encontrado.");
+        userSend.setSendMail(false);
+		return new ResponseEntity<UsuarioReenvioSenhaVO>(userSend, headers, HttpStatus.NOT_FOUND);
     }
 	
 	@RequestMapping(value = "/registration", method = RequestMethod.POST)
