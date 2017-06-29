@@ -1,5 +1,6 @@
 package br.com.project.webservice.auth.services;
 
+import java.io.Serializable;
 import java.io.StringWriter;
 import java.util.Map;
 
@@ -16,11 +17,13 @@ import org.springframework.mail.MailException;
 import org.springframework.mail.MailParseException;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.mail.javamail.MimeMessageHelper;
+import org.springframework.stereotype.Service;
 
 import br.com.project.webservice.auth.model.AnexoEmail;
 import br.com.project.webservice.auth.model.Email;
 
-public class EmailService {
+@Service
+public class EmailService implements Serializable{
 	private static final long serialVersionUID = 8306874220102079947L;
 
 	@Autowired
@@ -72,7 +75,7 @@ public class EmailService {
 		for (Map.Entry<String, String> parametro : parametros.entrySet()) {
 			context.put(parametro.getKey(), parametro.getValue());
 		}
-		Template template = ve.getTemplate("/email_template/" + email.getTemplate(), "UTF-8");
+		Template template = ve.getTemplate("email_template/" + email.getTemplate(), "UTF-8");
 		StringWriter writer = new StringWriter();
 		template.merge(context, writer);
 		return writer.toString();

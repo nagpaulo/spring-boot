@@ -10,9 +10,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.mail.SimpleMailMessage;
-import org.springframework.mail.javamail.JavaMailSender;
-import org.springframework.mail.javamail.JavaMailSenderImpl;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.context.SecurityContext;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -22,8 +19,10 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import br.com.project.webservice.auth.model.Email;
 import br.com.project.webservice.auth.model.Usuario;
 import br.com.project.webservice.auth.repository.UsuarioRepository;
+import br.com.project.webservice.auth.services.EmailService;
 import br.com.project.webservice.auth.services.SecurityServiceImpl;
 import br.com.project.webservice.entity.vo.UsuarioAutenticadoVO;
 
@@ -43,8 +42,8 @@ public class LoginController {
 	@Autowired
     private BCryptPasswordEncoder bCryptPasswordEncoder;
 	
-	 @Autowired
-	 public JavaMailSenderImpl emailSender;
+	@Autowired
+	private EmailService emailService;
 	
 	@RequestMapping(value = "/loginin", method = RequestMethod.POST, produces="application/json")
 	public ResponseEntity<UsuarioAutenticadoVO> acesso(@RequestParam("username") String username, @RequestParam("password") String password){
@@ -79,11 +78,14 @@ public class LoginController {
 		
 		Usuario user = usuarioRepository.findByLogin(username);
 		if(user.getCpf().equals(cpf) && user.getEmail().equals(email)){
-			SimpleMailMessage message = new SimpleMailMessage(); 
-	        message.setTo(email); 
-	        message.setSubject("Reenvio de Senha "+username); 
-	        message.setText("Teste");
-	        emailSender.send(message);
+			Email emailTemplate = new Email();
+			emailTemplate.setRemetente("Pronatec");
+			emailTemplate.addDestinatario(email);
+			emailTemplate.setAssunto("Reenvio de Senha");
+			emailTemplate.setHtml(true);
+			emailTemplate.setUsingTemplate(true);
+			emailTemplate.setTemplate("nova_senha_html.vm");
+	        emailService.enviar(emailTemplate);
 		}
 		
         return null;
