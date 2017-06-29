@@ -67,15 +67,15 @@ public class EmailService implements Serializable{
 
 	private String getMensagemByTemplate(Email email) {
 		VelocityEngine ve = new VelocityEngine();
-		ve.setProperty(RuntimeConstants.RESOURCE_LOADER, "classpath");
-		ve.setProperty("classpath.resource.loader.class", ClasspathResourceLoader.class.getName());
+		ve.setProperty(VelocityEngine.FILE_RESOURCE_LOADER_PATH, "./src/main/resources/");
+		ve.setProperty(VelocityEngine.FILE_RESOURCE_LOADER_CACHE, false);
 		ve.init();
 		VelocityContext context = new VelocityContext();
 		Map<String, String> parametros = email.getParametros();
 		for (Map.Entry<String, String> parametro : parametros.entrySet()) {
 			context.put(parametro.getKey(), parametro.getValue());
 		}
-		Template template = ve.getTemplate("email_template/" + email.getTemplate(), "UTF-8");
+		Template template = ve.getTemplate("/email_template/" + email.getTemplate(), "UTF-8");
 		StringWriter writer = new StringWriter();
 		template.merge(context, writer);
 		return writer.toString();

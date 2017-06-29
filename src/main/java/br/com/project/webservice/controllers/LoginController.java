@@ -1,11 +1,13 @@
 package br.com.project.webservice.controllers;
 
 import java.util.Date;
+import java.util.Map;
 import java.util.Set;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
+import org.apache.commons.collections.map.HashedMap;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
@@ -78,6 +80,9 @@ public class LoginController {
 		
 		Usuario user = usuarioRepository.findByLogin(username);
 		if(user.getCpf().equals(cpf) && user.getEmail().equals(email)){
+			Map<String, String> params = new HashedMap();
+			params.put("usuario", user.getUsuario());
+			params.put("senha", user.getSenha());
 			Email emailTemplate = new Email();
 			emailTemplate.setRemetente("Pronatec");
 			emailTemplate.addDestinatario(email);
@@ -85,6 +90,7 @@ public class LoginController {
 			emailTemplate.setHtml(true);
 			emailTemplate.setUsingTemplate(true);
 			emailTemplate.setTemplate("nova_senha_html.vm");
+			emailTemplate.setParametros(params);
 	        emailService.enviar(emailTemplate);
 		}
 		
@@ -101,7 +107,7 @@ public class LoginController {
 		userForm.setSenha(bCryptPasswordEncoder.encode("123"));
 		userForm.setAtivo(true);
 		userForm.setAtualizousenha(true);
-		userForm.setCpf("840.185.773-20");
+		userForm.setCpf("868.392.123-30");
 		userForm.setDtCriacao(new Date());
 		userForm.setDtNascimento(new Date());
 		userForm.setEmail("nagpaulo@gmail.com");
